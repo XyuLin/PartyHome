@@ -1,0 +1,298 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background: url(../img/branch-life/bg.png) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+div.container {
+	height: 85%;
+	position: relative;
+}
+
+header {
+	text-align: center;
+}
+
+p.bread-crumb {
+	color: #C81D1E;
+}
+
+div.main-content {
+	height: 70%;
+	border-radius: 8px;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-box;
+	align-items: center;
+}
+
+.article-title {
+	display: block;
+	color: #C81D1E;
+	font-weight: bold;
+}
+
+p.dashed-line {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #DDDDDD;
+}
+
+article.article-content {
+	height: 90%;
+	overflow: hidden;
+}
+
+article.article-content {
+	padding-top: 40px;
+}
+
+article.article-content li {
+	list-style: none;
+}
+
+p.article-info {
+	color: #999999;
+	margin: 0;
+}
+
+.bottom-read-btn {
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
+a.read-all-link {
+	color: #C81D1E;
+}
+
+.key-group {
+	position: fixed;
+	right: 8%;
+	top: 0;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.key-group img {
+	border-radius: 0;
+	width: 75px;
+	margin-top: 35px;
+	cursor: pointer;
+}
+
+
+/**
+ * 滚动条样式
+ */
+
+.article-content::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 12px;
+	/*高宽分别对应横竖滚动条的尺寸*/
+	height: 12px;
+}
+
+.article-content::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 6px;
+	-webkit-box-shadow: inset 0 0 5px #DDDDDD;
+	background: #FFFFFF;
+}
+
+.article-content::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	-webkit-box-shadow: inset 0 0 5px #F6F6F9;
+	border-radius: 0;
+	background: #F6F6F9;
+	border-radius: 6px;
+}
+
+li.li-main-content {
+	position: relative;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-box;
+	align-items: center;
+}
+
+li.li-main-content p {
+	margin: 0;
+}
+
+li.li-main-content p.p-content {
+	margin-left: 15px;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 80%;
+}
+
+li.li-main-content p.p-content:hover {
+	text-decoration: underline;
+}
+
+li.li-main-content p.p-content:active {
+	text-decoration: underline;
+}
+
+li.li-main-content p.p-date {
+	position: absolute;
+	right: 15px;
+	color: #CCCCCC;
+}
+
+div.class-btn-group {
+	text-align: center;
+	padding-top: 20px;
+	position: absolute;
+	width: 100%;
+	bottom: 6%;
+}
+
+div.class-btn-group img {
+	width: 100px;
+	margin: 20px;
+	transition: all .3s;
+}
+
+img.scale-img {
+	transform: scale(1.2);
+}
+
+div.main-content.flex.active {
+	background: transparent;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-box;
+	align-items: center;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+div.main-content.active.image {
+	background: transparent;
+	height: auto;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-box;
+	align-items: center;
+}
+
+.img-group img {
+	margin: 10px;
+	width: 400px;
+	border-radius: 20px;
+	box-shadow: 0 0 15px #333;
+}
+
+
+/**
+ * 滚动条样式
+ */
+
+.main-content::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 12px;
+	/*高宽分别对应横竖滚动条的尺寸*/
+	height: 12px;
+}
+
+div.main-content.flex.active::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 0px;
+	/*高宽分别对应横竖滚动条的尺寸*/
+	height: 0px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 6px;
+	-webkit-box-shadow: inset 0 0 5px #DDDDDD;
+	background: #FFFFFF;
+}
+
+.main-content::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	-webkit-box-shadow: inset 0 0 5px #F6F6F9;
+	border-radius: 0;
+	background: #F6F6F9;
+	border-radius: 6px;
+}
+
+
+/**
+ * 图片轮播
+ */
+
+.poster-main {
+	position: relative;
+	margin: 50px auto;
+}
+
+.poster-main .poster-list .poster-item {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.poster-main .poster-btn {
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+}
+
+.poster-main .poster-prev-btn {
+	left: 0;
+}
+
+.poster-main .poster-next-btn {
+	right: 0;
+}
+
+div#carousel-button .poster-prev-btn,
+div#carousel-button .poster-next-btn {
+	display: none;
+}
+
+img {
+	border-radius: 20px;
+}
+
+* {
+	cursor: default !important;
+}
+
+body {
+	overflow: hidden;
+	min-width: 1200px;
+	padding-top: 4%;
+}
+
+li {
+	list-style: none;
+}
+
+
+/**
+ * 轮播结束
+ */
+
+p.p-content,
+a.read-all-link,
+.class-btn-group img,
+.poster-item img,
+.img-group img,
+.key-group img {
+	cursor: pointer !important;
+}

@@ -19,7 +19,7 @@ class Index extends Api
      */
     public function index()
     {
-        $this->success('请求成功');
+        
     }
 
 }

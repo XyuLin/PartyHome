@@ -70,9 +70,14 @@ class Api
     public function __construct(Request $request = null)
     {
         $this->request = is_null($request) ? Request::instance() : $request;
-
         // 控制器初始化
         $this->_initialize();
+
+        // 跨域布置
+        isset($_SERVER['HTTP_ORIGIN']) ? header('Access-Control-Allow-Origin: '.$_SERVER['HTTP_ORIGIN']) : '';
+        header('Access-Control-Allow-Credentials: true');
+        header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+        header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, authKey, sessionId");
 
         // 前置操作方法
         if ($this->beforeActionList)
