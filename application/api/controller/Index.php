@@ -46,15 +46,18 @@ class Index extends Api
                 ->limit('10')
                 ->page($param['page'])
                 ->select();
+            $total = $article->where('classify_id',$param['classify_id'])->count('id');
+            $data['list'] = $list;
+            $data['total'] = $total;
         } catch (Exception $exception) {
             $this->error($exception->getMessage());
         }
-        $this->success('请求成功',$list);
+        $this->success('请求成功',$data);
     }
 
     public function detail()
     {
-        
+
     }
 
 }

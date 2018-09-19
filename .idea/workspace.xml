@@ -2,39 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dc202ee-ef47-4cfc-8622-6b5acfaa9cb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/api/controller/News.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/common/model/Article.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/common/model/Classify.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Classify.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Classify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Type.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/lang/zh-cn/article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/classify.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/lang/zh-cn/classify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/type.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/model/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/model/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/model/Classify.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/model/Classify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/model/Type.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/validate/Type.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/article/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/article/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/article/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/article/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/classify/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/classify/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/classify/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/classify/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/type/add.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/type/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/type/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/api/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/controller/Api.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/controller/Api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/classify.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/classify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/type.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/cache/cb/78ef4a9130f39208ff10858ddd8377.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/cache/cb/78ef4a9130f39208ff10858ddd8377.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201809/17.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/log/201809/17.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/973606e285a7f0290ade18d880675c73.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/973606e285a7f0290ade18d880675c73.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/c539930e80410ba4826a4f5e22137b03.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/c539930e80410ba4826a4f5e22137b03.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/cd0ed4289bab6a11b0ca2b0f8108a207.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/cd0ed4289bab6a11b0ca2b0f8108a207.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/d89700592e14c4535499d467b4db40de.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/d89700592e14c4535499d467b4db40de.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/dda45cd264e7531205e7a3808820c549.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/dda45cd264e7531205e7a3808820c549.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,14 +28,14 @@
         <counts>
           <entry key="html" value="216" />
           <entry key="js" value="334" />
-          <entry key="php" value="2890" />
+          <entry key="php" value="2980" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="216" />
           <entry key="JavaScript" value="334" />
-          <entry key="PHP" value="2890" />
+          <entry key="PHP" value="2980" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -104,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+            <state relative-caret-position="493">
+              <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -274,7 +243,7 @@
       <path value="$PROJECT_DIR$/vendor/overtrue/wechat" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="125" />
     <option name="y" value="80" />
     <option name="width" value="2190" />
@@ -400,12 +369,12 @@
       <updated>1537153033315</updated>
       <workItem from="1537153034512" duration="8420000" />
       <workItem from="1537237950442" duration="1725000" />
-      <workItem from="1537324398075" duration="14163000" />
+      <workItem from="1537324398075" duration="15258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24308000" />
+    <option name="totallyTimeSpent" value="25403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -754,8 +723,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+        <state relative-caret-position="493">
+          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
         </state>
       </provider>
     </entry>
