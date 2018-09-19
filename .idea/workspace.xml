@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dc202ee-ef47-4cfc-8622-6b5acfaa9cb4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/application/api/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/Ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Ajax.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,14 +28,14 @@
         <counts>
           <entry key="html" value="216" />
           <entry key="js" value="334" />
-          <entry key="php" value="3257" />
+          <entry key="php" value="3330" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="216" />
           <entry key="JavaScript" value="334" />
-          <entry key="PHP" value="3257" />
+          <entry key="PHP" value="3330" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -42,8 +43,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="18" />
-          <entry key="JavaScript" value="13" />
-          <entry key="PHP" value="61" />
+          <entry key="JavaScript" value="14" />
+          <entry key="PHP" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -58,8 +59,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="18" />
-          <entry key="js" value="13" />
-          <entry key="php" value="61" />
+          <entry key="js" value="14" />
+          <entry key="php" value="66" />
         </counts>
       </usages-collector>
     </session>
@@ -69,11 +70,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+            <state relative-caret-position="358">
+              <caret line="54" column="37" lean-forward="true" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/api/controller/Common.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="132" column="25" selection-start-line="132" selection-start-column="25" selection-end-line="132" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/admin/controller/Ajax.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="128" column="69" lean-forward="true" selection-start-line="128" selection-start-column="69" selection-end-line="128" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -140,6 +159,8 @@
       <find>image</find>
       <find>$image.css</find>
       <find>selectPage</find>
+      <find>summer</find>
+      <find>upload</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -180,6 +201,8 @@
         <option value="$PROJECT_DIR$/application/api/config.php" />
         <option value="$PROJECT_DIR$/application/common/controller/Api.php" />
         <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
+        <option value="$PROJECT_DIR$/application/api/controller/Common.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Ajax.php" />
       </list>
     </option>
   </component>
@@ -264,6 +287,11 @@
             <path>
               <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
               <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -276,13 +304,7 @@
               <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
               <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -302,36 +324,6 @@
               <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
               <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -368,12 +360,12 @@
       <updated>1537153033315</updated>
       <workItem from="1537153034512" duration="8420000" />
       <workItem from="1537237950442" duration="1725000" />
-      <workItem from="1537324398075" duration="16236000" />
+      <workItem from="1537324398075" duration="18134000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26381000" />
+    <option name="totallyTimeSpent" value="28279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -407,19 +399,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="219" column="10" selection-start-line="219" selection-start-column="10" selection-end-line="219" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/common/lang/zh-cn/addon.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/lang/zh-cn/auth/admin.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/lang/zh-cn/addon.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -469,13 +448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
           <caret line="4241" column="26" selection-start-line="4241" selection-start-column="16" selection-end-line="4241" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/addons/summernote/js/summernote.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="2929" column="52" lean-forward="true" selection-start-line="2929" selection-start-column="52" selection-end-line="2929" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -627,11 +599,6 @@
     <entry file="file://$PROJECT_DIR$/application/api/controller/Demo.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/controller/Common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1863" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/js/backend/branch.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
@@ -699,6 +666,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/controller/Api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="342" column="30" lean-forward="true" selection-start-line="342" selection-start-column="30" selection-end-line="342" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/summernote/config.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/summernote/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/summernote/Summernote.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-344" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/addons/summernote/js/summernote.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="2940" column="56" selection-start-line="2940" selection-start-column="50" selection-end-line="2940" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/api/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -713,17 +705,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/common/controller/Api.php">
+    <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
-          <caret line="342" column="30" lean-forward="true" selection-start-line="342" selection-start-column="30" selection-end-line="342" selection-end-column="30" />
+          <caret line="54" column="37" lean-forward="true" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
+    <entry file="file://$PROJECT_DIR$/application/api/controller/Common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+        <state relative-caret-position="486">
+          <caret line="132" column="25" selection-start-line="132" selection-start-column="25" selection-end-line="132" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="128" column="69" lean-forward="true" selection-start-line="128" selection-start-column="69" selection-end-line="128" selection-end-column="69" />
         </state>
       </provider>
     </entry>

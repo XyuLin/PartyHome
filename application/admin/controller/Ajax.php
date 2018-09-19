@@ -119,12 +119,14 @@ class Ajax extends Backend
                 'storage'     => 'local',
                 'sha1'        => $sha1,
             );
+            $pathUrl = $this->request->root(true);
+            $path = str_replace('index.php','',$pathUrl);
             $attachment = model("attachment");
             $attachment->data(array_filter($params));
             $attachment->save();
             \think\Hook::listen("upload_after", $attachment);
             $this->success(__('Upload successful'), null, [
-                'url' => $uploadDir . $splInfo->getSaveName()
+                'url' => $path . $uploadDir . $splInfo->getSaveName()
             ]);
         } else {
             // 上传失败获取错误信息
