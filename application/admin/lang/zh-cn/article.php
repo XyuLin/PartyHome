@@ -2,6 +2,7 @@
 
 return [
     'Id'  =>  'ID',
+    'Image'  =>  '图片',
     'Classify_id'  =>  '分类id',
     'Title'  =>  '标题',
     'Author'  =>  '作者',
