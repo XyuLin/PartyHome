@@ -57,7 +57,18 @@ class Index extends Api
 
     public function detail()
     {
+        $param = [
+            'id' => 'detailId/s'
+        ];
 
+        $param = $this->buildParam($param);
+        $article = new Article();
+        $info = $article->where('id',$param['id'])->find();
+        if($info != null) {
+            $this->success('请求成功',$info);
+        } else {
+            $this->error('参数错误! ID无效');
+        }
     }
 
 }
