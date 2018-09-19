@@ -1,0 +1,136 @@
+[ 2018-09-19T10:45:22+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000162s ]
+[ info ] [ LOG ] INIT File
+[ 2018-09-19T10:45:22+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-09-19T10:45:22+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002073s ]
+[ 2018-09-19T10:45:22+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-09-19T10:45:22+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.014101s ] mysql:host=127.0.0.1;dbname=party;charset=utf8
+[ 2018-09-19T10:45:22+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'branch' [ RunTime:0.000863s ]
+[ 2018-09-19T10:45:22+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'party' AND table_name = 'branch' ORDER BY ORDINAL_POSITION [ RunTime:0.004789s ]
+[ 2018-09-19T10:45:29+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000160s ]
+[ info ] [ LOG ] INIT File
+[ 2018-09-19T10:45:29+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-09-19T10:45:29+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004439s ]
+[ 2018-09-19T10:45:29+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-09-19T10:45:31+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000164s ]
+[ info ] [ LOG ] INIT File
+[ 2018-09-19T10:45:31+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-09-19T10:45:31+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004431s ]
+[ 2018-09-19T10:45:31+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-09-19T10:45:31+08:00 ][ info ] [ LANG ] C:\Work\Code\PartyHome\application\admin\lang/zh-cn.php
+[ 2018-09-19T10:45:31+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.014156s ] mysql:host=127.0.0.1;dbname=party;charset=utf8
+[ 2018-09-19T10:45:31+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `auth_rule` [ RunTime:0.004913s ]
+[ 2018-09-19T10:45:31+08:00 ][ sql ] [ SQL ] SELECT * FROM `auth_rule` WHERE  `name` = 'branch' LIMIT 1 [ RunTime:0.000608s ]
+[ 2018-09-19T10:45:31+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'branch' , '部门分支' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1537325131 , 1537325131) [ RunTime:0.002327s ]
+[ 2018-09-19T10:45:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'branch/index' LIMIT 1 [ RunTime:0.000501s ]
+[ 2018-09-19T10:45:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'branch/add' LIMIT 1 [ RunTime:0.000540s ]
+[ 2018-09-19T10:45:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'branch/edit' LIMIT 1 [ RunTime:0.000571s ]
+[ 2018-09-19T10:45:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'branch/del' LIMIT 1 [ RunTime:0.000519s ]
+[ 2018-09-19T10:45:31+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'branch/multi' LIMIT 1 [ RunTime:0.000525s ]
+[ 2018-09-19T10:45:31+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 103 , 'branch/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1537325131 , 1537325131) [ RunTime:0.000505s ]
+[ 2018-09-19T10:45:31+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 103 , 'branch/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1537325131 , 1537325131) [ RunTime:0.000283s ]
+[ 2018-09-19T10:45:31+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 103 , 'branch/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1537325131 , 1537325131) [ RunTime:0.000227s ]
+[ 2018-09-19T10:45:31+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 103 , 'branch/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1537325131 , 1537325131) [ RunTime:0.000221s ]
+[ 2018-09-19T10:45:31+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 103 , 'branch/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1537325131 , 1537325131) [ RunTime:0.000246s ]
+[ 2018-09-19T11:30:11+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000113s ]
+[ info ] [ LOG ] INIT File
+[ 2018-09-19T11:30:11+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-09-19T11:30:11+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005442s ]
+[ 2018-09-19T11:30:11+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-09-19T11:30:11+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.014039s ] mysql:host=127.0.0.1;dbname=party;charset=utf8
+[ 2018-09-19T11:30:11+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'branch' [ RunTime:0.000858s ]
+[ 2018-09-19T11:30:11+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'party' AND table_name = 'branch' ORDER BY ORDINAL_POSITION [ RunTime:0.004914s ]
+[ 2018-09-19T11:30:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000113s ]
+[ info ] [ LOG ] INIT File
+[ 2018-09-19T11:30:17+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-09-19T11:30:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005108s ]
+[ 2018-09-19T11:30:17+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-09-19T11:30:17+08:00 ][ info ] [ LANG ] C:\Work\Code\PartyHome\application\admin\lang/zh-cn.php
+[ 2018-09-19T11:30:18+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.014607s ] mysql:host=127.0.0.1;dbname=party;charset=utf8
+[ 2018-09-19T11:30:18+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `auth_rule` [ RunTime:0.004672s ]
+[ 2018-09-19T11:30:18+08:00 ][ sql ] [ SQL ] SELECT * FROM `auth_rule` WHERE  `name` = 'branch' LIMIT 1 [ RunTime:0.000722s ]
+[ 2018-09-19T11:30:18+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'branch/index' LIMIT 1 [ RunTime:0.000505s ]
+[ 2018-09-19T11:30:18+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'branch/add' LIMIT 1 [ RunTime:0.000595s ]
+[ 2018-09-19T11:30:18+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'branch/edit' LIMIT 1 [ RunTime:0.000567s ]
+[ 2018-09-19T11:30:18+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'branch/del' LIMIT 1 [ RunTime:0.000595s ]
+[ 2018-09-19T11:30:18+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'branch/multi' LIMIT 1 [ RunTime:0.000477s ]
+[ 2018-09-19T11:30:18+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=103,`name`='branch/index',`icon`='fa fa-circle-o',`title`='查看',`ismenu`=0,`status`='normal',`updatetime`=1537327818  WHERE  `id` = 104 [ RunTime:0.000548s ]
+[ 2018-09-19T11:30:18+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=103,`name`='branch/add',`icon`='fa fa-circle-o',`title`='添加',`ismenu`=0,`status`='normal',`updatetime`=1537327818  WHERE  `id` = 105 [ RunTime:0.000287s ]
+[ 2018-09-19T11:30:18+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=103,`name`='branch/edit',`icon`='fa fa-circle-o',`title`='编辑',`ismenu`=0,`status`='normal',`updatetime`=1537327818  WHERE  `id` = 106 [ RunTime:0.000315s ]
+[ 2018-09-19T11:30:18+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=103,`name`='branch/del',`icon`='fa fa-circle-o',`title`='删除',`ismenu`=0,`status`='normal',`updatetime`=1537327818  WHERE  `id` = 107 [ RunTime:0.000300s ]
+[ 2018-09-19T11:30:18+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=103,`name`='branch/multi',`icon`='fa fa-circle-o',`title`='批量更新',`ismenu`=0,`status`='normal',`updatetime`=1537327818  WHERE  `id` = 108 [ RunTime:0.000272s ]
+[ 2018-09-19T13:28:55+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000182s ]
+[ info ] [ LOG ] INIT File
+[ 2018-09-19T13:28:55+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-09-19T13:28:55+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004564s ]
+[ 2018-09-19T13:28:55+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-09-19T13:28:55+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.014119s ] mysql:host=127.0.0.1;dbname=party;charset=utf8
+[ 2018-09-19T13:28:55+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'article' [ RunTime:0.000946s ]
+[ 2018-09-19T13:28:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'party' AND table_name = 'article' ORDER BY ORDINAL_POSITION [ RunTime:0.004749s ]
+[ 2018-09-19T13:29:11+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000169s ]
+[ info ] [ LOG ] INIT File
+[ 2018-09-19T13:29:11+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-09-19T13:29:11+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004725s ]
+[ 2018-09-19T13:29:11+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-09-19T13:29:11+08:00 ][ info ] [ LANG ] C:\Work\Code\PartyHome\application\admin\lang/zh-cn.php
+[ 2018-09-19T13:29:11+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.014249s ] mysql:host=127.0.0.1;dbname=party;charset=utf8
+[ 2018-09-19T13:29:11+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `auth_rule` [ RunTime:0.004554s ]
+[ 2018-09-19T13:29:11+08:00 ][ sql ] [ SQL ] SELECT * FROM `auth_rule` WHERE  `name` = 'article' LIMIT 1 [ RunTime:0.000652s ]
+[ 2018-09-19T13:29:11+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'article/index' LIMIT 1 [ RunTime:0.000498s ]
+[ 2018-09-19T13:29:11+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'article/add' LIMIT 1 [ RunTime:0.000597s ]
+[ 2018-09-19T13:29:11+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'article/edit' LIMIT 1 [ RunTime:0.000593s ]
+[ 2018-09-19T13:29:11+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'article/del' LIMIT 1 [ RunTime:0.000458s ]
+[ 2018-09-19T13:29:11+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'article/multi' LIMIT 1 [ RunTime:0.000491s ]
+[ 2018-09-19T13:29:11+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=97,`name`='article/index',`icon`='fa fa-circle-o',`title`='查看',`ismenu`=0,`status`='normal',`updatetime`=1537334951  WHERE  `id` = 98 [ RunTime:0.000617s ]
+[ 2018-09-19T13:29:11+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=97,`name`='article/add',`icon`='fa fa-circle-o',`title`='添加',`ismenu`=0,`status`='normal',`updatetime`=1537334951  WHERE  `id` = 99 [ RunTime:0.000288s ]
+[ 2018-09-19T13:29:11+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=97,`name`='article/edit',`icon`='fa fa-circle-o',`title`='编辑',`ismenu`=0,`status`='normal',`updatetime`=1537334951  WHERE  `id` = 100 [ RunTime:0.000278s ]
+[ 2018-09-19T13:29:11+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=97,`name`='article/del',`icon`='fa fa-circle-o',`title`='删除',`ismenu`=0,`status`='normal',`updatetime`=1537334951  WHERE  `id` = 101 [ RunTime:0.000225s ]
+[ 2018-09-19T13:29:11+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=97,`name`='article/multi',`icon`='fa fa-circle-o',`title`='批量更新',`ismenu`=0,`status`='normal',`updatetime`=1537334951  WHERE  `id` = 102 [ RunTime:0.000291s ]
+[ 2018-09-19T13:36:49+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000114s ]
+[ info ] [ LOG ] INIT File
+[ 2018-09-19T13:36:49+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-09-19T13:36:49+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004797s ]
+[ 2018-09-19T13:36:49+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-09-19T13:36:49+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.013780s ] mysql:host=127.0.0.1;dbname=party;charset=utf8
+[ 2018-09-19T13:36:49+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'type' [ RunTime:0.000915s ]
+[ 2018-09-19T13:36:58+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000115s ]
+[ info ] [ LOG ] INIT File
+[ 2018-09-19T13:36:58+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-09-19T13:36:58+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004405s ]
+[ 2018-09-19T13:36:58+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-09-19T13:36:58+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.004405s ] mysql:host=127.0.0.1;dbname=party;charset=utf8
+[ 2018-09-19T13:36:58+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `auth_rule` [ RunTime:0.004645s ]
+[ 2018-09-19T13:36:58+08:00 ][ sql ] [ SQL ] SELECT * FROM `auth_rule` WHERE  (  `name` LIKE 'type%' ) [ RunTime:0.000754s ]
+[ 2018-09-19T13:36:59+08:00 ][ sql ] [ SQL ] SELECT * FROM `auth_rule` WHERE  `id` IN (85,87,89,88,86,90) [ RunTime:0.000686s ]
+[ 2018-09-19T13:36:59+08:00 ][ sql ] [ SQL ] DELETE FROM `auth_rule`    WHERE  `id` = 85 [ RunTime:0.002095s ]
+[ 2018-09-19T13:36:59+08:00 ][ sql ] [ SQL ] DELETE FROM `auth_rule`    WHERE  `id` = 86 [ RunTime:0.001736s ]
+[ 2018-09-19T13:36:59+08:00 ][ sql ] [ SQL ] DELETE FROM `auth_rule`    WHERE  `id` = 87 [ RunTime:0.001600s ]
+[ 2018-09-19T13:36:59+08:00 ][ sql ] [ SQL ] DELETE FROM `auth_rule`    WHERE  `id` = 88 [ RunTime:0.001478s ]
+[ 2018-09-19T13:36:59+08:00 ][ sql ] [ SQL ] DELETE FROM `auth_rule`    WHERE  `id` = 89 [ RunTime:0.001702s ]
+[ 2018-09-19T13:37:00+08:00 ][ sql ] [ SQL ] DELETE FROM `auth_rule`    WHERE  `id` = 90 [ RunTime:0.001714s ]
+[ 2018-09-19T13:38:59+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000162s ]
+[ info ] [ LOG ] INIT File
+[ 2018-09-19T13:38:59+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-09-19T13:38:59+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005637s ]
+[ 2018-09-19T13:38:59+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-09-19T13:38:59+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.013973s ] mysql:host=127.0.0.1;dbname=party;charset=utf8
+[ 2018-09-19T13:38:59+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'classify' [ RunTime:0.000940s ]
+[ 2018-09-19T13:38:59+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'party' AND table_name = 'classify' ORDER BY ORDINAL_POSITION [ RunTime:0.004640s ]
+[ 2018-09-19T13:39:13+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000162s ]
+[ info ] [ LOG ] INIT File
+[ 2018-09-19T13:39:13+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-09-19T13:39:13+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004615s ]
+[ 2018-09-19T13:39:13+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-09-19T13:39:13+08:00 ][ info ] [ LANG ] C:\Work\Code\PartyHome\application\admin\lang/zh-cn.php
+[ 2018-09-19T13:39:13+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.014110s ] mysql:host=127.0.0.1;dbname=party;charset=utf8
+[ 2018-09-19T13:39:13+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `auth_rule` [ RunTime:0.004709s ]
+[ 2018-09-19T13:39:13+08:00 ][ sql ] [ SQL ] SELECT * FROM `auth_rule` WHERE  `name` = 'classify' LIMIT 1 [ RunTime:0.000650s ]
+[ 2018-09-19T13:39:13+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'classify/index' LIMIT 1 [ RunTime:0.000561s ]
+[ 2018-09-19T13:39:13+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'classify/add' LIMIT 1 [ RunTime:0.000490s ]
+[ 2018-09-19T13:39:13+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'classify/edit' LIMIT 1 [ RunTime:0.000447s ]
+[ 2018-09-19T13:39:13+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'classify/del' LIMIT 1 [ RunTime:0.000534s ]
+[ 2018-09-19T13:39:13+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'classify/multi' LIMIT 1 [ RunTime:0.000565s ]
+[ 2018-09-19T13:39:13+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=91,`name`='classify/index',`icon`='fa fa-circle-o',`title`='查看',`ismenu`=0,`status`='normal',`updatetime`=1537335553  WHERE  `id` = 92 [ RunTime:0.000573s ]
+[ 2018-09-19T13:39:13+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=91,`name`='classify/add',`icon`='fa fa-circle-o',`title`='添加',`ismenu`=0,`status`='normal',`updatetime`=1537335553  WHERE  `id` = 93 [ RunTime:0.000302s ]
+[ 2018-09-19T13:39:13+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=91,`name`='classify/edit',`icon`='fa fa-circle-o',`title`='编辑',`ismenu`=0,`status`='normal',`updatetime`=1537335553  WHERE  `id` = 94 [ RunTime:0.000283s ]
+[ 2018-09-19T13:39:13+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=91,`name`='classify/del',`icon`='fa fa-circle-o',`title`='删除',`ismenu`=0,`status`='normal',`updatetime`=1537335553  WHERE  `id` = 95 [ RunTime:0.000290s ]
+[ 2018-09-19T13:39:13+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=91,`name`='classify/multi',`icon`='fa fa-circle-o',`title`='批量更新',`ismenu`=0,`status`='normal',`updatetime`=1537335553  WHERE  `id` = 96 [ RunTime:0.000287s ]

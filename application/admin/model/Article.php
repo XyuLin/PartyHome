@@ -15,7 +15,7 @@ class Article extends Model
     // 定义时间戳字段名
     protected $createTime = 'createtime';
     protected $updateTime = 'updatetime';
-    
+
     // 追加属性
     protected $append = [
         'classify_names'
@@ -34,6 +34,16 @@ class Article extends Model
             return '此分类已删除';
         }
     }
+    
+
+    protected static function init()
+    {
+        self::afterInsert(function ($row) {
+            $pk = $row->getPk();
+            $row->getQuery()->where($pk, $row[$pk])->update(['weigh' => $row[$pk]]);
+        });
+    }
+
     
 
 

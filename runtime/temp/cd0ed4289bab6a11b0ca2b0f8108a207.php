@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:75:"C:\Work\Code\PartyHome\public/../application/admin\view\classify\index.html";i:1537155315;s:65:"C:\Work\Code\PartyHome\application\admin\view\layout\default.html";i:1536636085;s:62:"C:\Work\Code\PartyHome\application\admin\view\common\meta.html";i:1536636085;s:64:"C:\Work\Code\PartyHome\application\admin\view\common\script.html";i:1536636085;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:75:"C:\Work\Code\PartyHome\public/../application/admin\view\classify\index.html";i:1537335539;s:65:"C:\Work\Code\PartyHome\application\admin\view\layout\default.html";i:1536636085;s:62:"C:\Work\Code\PartyHome\application\admin\view\common\meta.html";i:1536636085;s:64:"C:\Work\Code\PartyHome\application\admin\view\common\script.html";i:1536636085;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>

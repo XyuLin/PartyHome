@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:73:"C:\Work\Code\PartyHome\public/../application/admin\view\classify\add.html";i:1537335848;s:65:"C:\Work\Code\PartyHome\application\admin\view\layout\default.html";i:1536636085;s:62:"C:\Work\Code\PartyHome\application\admin\view\common\meta.html";i:1536636085;s:64:"C:\Work\Code\PartyHome\application\admin\view\common\script.html";i:1536636085;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:71:"C:\Work\Code\PartyHome\public/../application/admin\view\branch\add.html";i:1537329830;s:65:"C:\Work\Code\PartyHome\application\admin\view\layout\default.html";i:1536636085;s:62:"C:\Work\Code\PartyHome\application\admin\view\common\meta.html";i:1536636085;s:64:"C:\Work\Code\PartyHome\application\admin\view\common\script.html";i:1536636085;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -56,7 +56,7 @@
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Image'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
             <div class="input-group">
-                <input id="c-image" data-rule="" class="form-control form-control" size="50" name="row[image]" type="text">
+                <input id="c-image" data-rule="required" class="form-control form-control" size="50" name="row[image]" type="text">
                 <div class="input-group-addon no-border no-padding">
                     <span><button type="button" id="plupload-image" class="btn btn-danger plupload" data-input-id="c-image" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-image"><i class="fa fa-upload"></i> <?php echo __('Upload'); ?></button></span>
                     <span><button type="button" id="fachoose-image" class="btn btn-primary fachoose" data-input-id="c-image" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> <?php echo __('Choose'); ?></button></span>
@@ -67,21 +67,16 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Pid'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <?php echo build_select('row[pid]', $ruledata, null, ['class'=>'form-control selectpicker', 'data-rule'=>'required']); ?>
-        </div>
-    </div>
-    <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Names'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-names" data-rule="required" class="form-control form-control" name="row[names]" type="text" value="">
+            <input id="c-names" data-rule="required" class="form-control form-control" name="row[names]" type="text">
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Describe'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Pid'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-describe" data-rule="required" class="form-control form-control" name="row[describe]" type="text" value="">
+            <!--<input id="c-parent_id" data-rule="" data-field="names" data-source="branch/index" class="form-control selectpage form-control" name="row[parent_id]" type="text" value="">-->
+            <?php echo build_select('row[pid]', $ruledata, null, ['class'=>'form-control selectpicker', 'data-rule'=>'required']); ?>
         </div>
     </div>
     <div class="form-group layer-footer">

@@ -29520,3 +29520,68 @@ File
 [ sql ] [ SQL ] SELECT * FROM `type` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000257s ]
 [ sql ] [ SQL ] SELECT * FROM `type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000231s ]
 [ sql ] [ SQL ] SELECT * FROM `type` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000226s ]
+---------------------------------------------------------------
+[ 2018-09-17T14:31:02+08:00 ] 0.0.0.0 GET /partyHome/public/api/index/index
+[ info ] localhost/partyHome/public/api/index/index [运行时间：0.029379s][吞吐率：34.04req/s] [内存消耗：1,975.59kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000122s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002284s ]
+[ info ] [ LANG ] C:\Work\Code\PartyHome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536038892,1536051306,1536226427,1536320081; PHPSESSID=1b0ro7pmdoreh2e43ujh8c4ja5; keeplogin=1%7C86400%7C1537239367%7C8b0207ca51e03298c81bf81b961448bf',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3534.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Work\Code\PartyHome\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002068s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ C:\Work\Code\PartyHome\application\api\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T14:31:15+08:00 ] 0.0.0.0 GET /partyHome/public/api/index/index
+[ info ] localhost/partyHome/public/api/index/index [运行时间：0.026149s][吞吐率：38.24req/s] [内存消耗：1,976.07kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001878s ]
+[ info ] [ LANG ] C:\Work\Code\PartyHome\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1536038892,1536051306,1536226427,1536320081; PHPSESSID=1b0ro7pmdoreh2e43ujh8c4ja5; keeplogin=1%7C86400%7C1537239367%7C8b0207ca51e03298c81bf81b961448bf',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3534.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\Work\Code\PartyHome\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001256s ]
+[ info ] [ RUN ] app\api\controller\Index->index[ C:\Work\Code\PartyHome\application\api\controller\Index.php ]
+[ info ] [ LOG ] INIT File

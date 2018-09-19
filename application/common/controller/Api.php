@@ -329,4 +329,22 @@ class Api
         return true;
     }
 
+
+
+    /**
+     * 绑定数据
+     * @param $array
+     *
+     * @return array
+     */
+    protected function buildParam($array)
+    {
+        $data=[];
+        if (is_array($array)){
+            foreach( $array as $item=>$value ){
+                $data[$item] = $this->request->param($value);
+            }
+        }
+        return $data;
+    }
 }

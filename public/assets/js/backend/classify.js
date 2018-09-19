@@ -16,27 +16,20 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
 
             var table = $("#table");
 
-            //在普通搜索渲染后
-            table.on('post-common-search.bs.table', function (event, table) {
-                var form = $("form", table.$commonsearch);
-                $("input[name='type_id']", form).addClass("selectpage").data("source", "type/index").data("primaryKey", "id").data("field", "names").data("orderBy", "id desc");
-                Form.events.cxselect(form);
-                Form.events.selectpage(form);
-            });
-
             // 初始化表格
             table.bootstrapTable({
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
                 pk: 'id',
                 sortName: 'id',
+                escape:false,
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', title: __('Id'),operate:false},
-                        {field: 'type_id', title: __('Type_id'),visible:false},
-                        {field: 'type_names', title: __('Type_id'),operate:false},
+                        {field: 'id', title: __('Id')},
+                        {field: 'pid', title: __('Pid'),visible:false,operate:false},
                         {field: 'names', title: __('Names')},
-                        {field: 'describe', title: __('Describe'),operate:false},
+                        {field: 'describe', title: __('Describe')},
+                        {field: 'image', title: __('Image'), formatter: Table.api.formatter.image},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'updatetime', title: __('Updatetime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}

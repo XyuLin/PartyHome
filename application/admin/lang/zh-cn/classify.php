@@ -2,7 +2,8 @@
 
 return [
     'Id'  =>  'ID',
-    'Type_id'  =>  '所属类型',
+    'Image'  =>  '图片',
+    'Pid'  =>  '所属分类',
     'Names'  =>  '名称',
     'Describe'  =>  '描述',
     'Createtime'  =>  '添加时间',

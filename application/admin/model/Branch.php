@@ -4,10 +4,10 @@ namespace app\admin\model;
 
 use think\Model;
 
-class Type extends Model
+class Branch extends Model
 {
     // 表名
-    protected $table = 'type';
+    protected $table = 'branch';
     
     // 自动写入时间戳字段
     protected $autoWriteTimestamp = 'int';
@@ -18,13 +18,9 @@ class Type extends Model
     
     // 追加属性
     protected $append = [
-
     ];
-    
-    public function Classify()
-    {
-        return $this->hasMany('Classify');
-    }
+
+
     
 
 

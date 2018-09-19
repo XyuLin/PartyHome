@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"C:\Work\Code\PartyHome\public/../application/admin\view\classify\edit.html";i:1537156107;s:65:"C:\Work\Code\PartyHome\application\admin\view\layout\default.html";i:1536636085;s:62:"C:\Work\Code\PartyHome\application\admin\view\common\meta.html";i:1536636085;s:64:"C:\Work\Code\PartyHome\application\admin\view\common\script.html";i:1536636085;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:74:"C:\Work\Code\PartyHome\public/../application/admin\view\classify\edit.html";i:1537335854;s:65:"C:\Work\Code\PartyHome\application\admin\view\layout\default.html";i:1536636085;s:62:"C:\Work\Code\PartyHome\application\admin\view\common\meta.html";i:1536636085;s:64:"C:\Work\Code\PartyHome\application\admin\view\common\script.html";i:1536636085;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -53,9 +53,23 @@
                                 <form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
 
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Type_id'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Image'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-type_id" data-rule="required" data-field="names" data-source="type/index" class="form-control selectpage form-control" name="row[type_id]" type="text" value="<?php echo $row['type_id']; ?>">
+            <div class="input-group">
+                <input id="c-image" data-rule="" class="form-control form-control" size="50" name="row[image]" type="text" value="<?php echo $row['image']; ?>">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-image" class="btn btn-danger plupload" data-input-id="c-image" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-image"><i class="fa fa-upload"></i> <?php echo __('Upload'); ?></button></span>
+                    <span><button type="button" id="fachoose-image" class="btn btn-primary fachoose" data-input-id="c-image" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> <?php echo __('Choose'); ?></button></span>
+                </div>
+                <span class="msg-box n-right" for="c-image"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-image"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Pid'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <?php echo build_select('row[pid]', $ruledata, $row['pid'], ['class'=>'form-control selectpicker', 'data-rule'=>'required']); ?>
         </div>
     </div>
     <div class="form-group">

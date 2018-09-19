@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"C:\Work\Code\PartyHome\public/../application/admin\view\article\add.html";i:1537156122;s:65:"C:\Work\Code\PartyHome\application\admin\view\layout\default.html";i:1536636085;s:62:"C:\Work\Code\PartyHome\application\admin\view\common\meta.html";i:1536636085;s:64:"C:\Work\Code\PartyHome\application\admin\view\common\script.html";i:1536636085;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:72:"C:\Work\Code\PartyHome\public/../application/admin\view\article\add.html";i:1537336421;s:65:"C:\Work\Code\PartyHome\application\admin\view\layout\default.html";i:1536636085;s:62:"C:\Work\Code\PartyHome\application\admin\view\common\meta.html";i:1536636085;s:64:"C:\Work\Code\PartyHome\application\admin\view\common\script.html";i:1536636085;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -74,6 +74,12 @@
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Content'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
             <textarea id="c-content" data-rule="required" class="form-control editor form-control" rows="5" name="row[content]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Weigh'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-weigh" data-rule="required" class="form-control form-control" name="row[weigh]" type="number" value="1">
         </div>
     </div>
     <div class="form-group layer-footer">

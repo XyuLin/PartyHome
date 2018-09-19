@@ -4,7 +4,7 @@ namespace app\admin\validate;
 
 use think\Validate;
 
-class Type extends Validate
+class Branch extends Validate
 {
     /**
      * 验证规则

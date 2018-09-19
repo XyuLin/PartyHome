@@ -5,12 +5,12 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格参数配置
             Table.api.init({
                 extend: {
-                    index_url: 'type/index',
-                    add_url: 'type/add',
-                    edit_url: 'type/edit',
-                    del_url: 'type/del',
-                    multi_url: 'type/multi',
-                    table: 'type',
+                    index_url: 'branch/index',
+                    add_url: 'branch/add',
+                    edit_url: 'branch/edit',
+                    del_url: 'branch/del',
+                    multi_url: 'branch/multi',
+                    table: 'branch',
                 }
             });
 
@@ -21,12 +21,14 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
                 pk: 'id',
                 sortName: 'id',
+                escape:false,
                 columns: [
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id'),operate:false},
-                        {field: 'names', title: __('Names')},
-                        {field: 'describe', title: __('Describe'),operate:false},
+                        {field: 'names', title: __('Names'),operate:false},
+                        {field: 'pid', title: __('Pid'),visible:false,operate:false},
+                        {field: 'image', title: __('Image'), formatter: Table.api.formatter.image},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'updatetime', title: __('Updatetime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
