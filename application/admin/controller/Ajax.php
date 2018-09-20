@@ -120,7 +120,7 @@ class Ajax extends Backend
                 'sha1'        => $sha1,
             );
             $pathUrl = $this->request->root(true);
-            $path = str_replace('index.php','',$pathUrl);
+            $path = str_replace('/index.php','',$pathUrl);
             $attachment = model("attachment");
             $attachment->data(array_filter($params));
             $attachment->save();
