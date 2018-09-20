@@ -4,6 +4,7 @@ namespace app\api\controller;
 
 use app\common\controller\Api;
 use app\common\model\Article;
+use app\common\model\Branch;
 use fast\Tree;
 use think\Exception;
 
@@ -17,20 +18,10 @@ class Index extends Api
     protected $noNeedRight = ['*'];
 
     /**
-     * 首页
-     * 
+     * 最新动态
      */
     public function index()
     {
-        $str = '
-            群团组织，只有一层架构， 部门   -列表-文章 
-            支部生活，两层架构， 部分-分部 -列表-文章，对应按钮跟去当前选择获取相对应的数据
-            探讨交流 
-                |_ 通知
-                |_ 公告
-                |_ 公示
-        ';
-
         $param = [
             'classify_id' => 'pid/s', // 分类id
             'page'        => 'p/d', // 页码
@@ -55,6 +46,7 @@ class Index extends Api
         $this->success('请求成功',$data);
     }
 
+    // 文章详情
     public function detail()
     {
         $param = [
@@ -71,6 +63,53 @@ class Index extends Api
         }
     }
 
-    public function
+    // 专题专栏
+    public function special()
+    {
+        $param = [
+            'page' => 'p/s', // 分类id
+        ];
+        $param = $this->buildParam($param);
+        $article = new Article();
 
+        // 查询排名最高的四篇文章
+        $hot = collection($article->where('classify_id','31')->order('weigh','desc')->limit('1','4')->select())->toArray();
+        $inArr = [];
+        foreach($hot as $value) {
+            $inArr[] = $value['id'];
+        }
+        $list = collection($article->where('classify_id','31')
+                        ->where('id','not in',$inArr)
+                        ->limit('10')
+                        ->order('createtime','desc')
+                        ->page($param['page'])
+                        ->select()
+        )->toArray();
+        $total = $article->where('classify_id','31')
+                        ->where('id','not in',$inArr)
+                        ->count('id');
+        $data['list'] = $list;
+        $data['total'] = $total;
+        $data['hot'] = $hot;
+
+        $this->success('请求成功',$data);
+    }
+
+    // 支部生活
+    public function branchLife()
+    {
+        $param = [
+            'branch_id'     => 'branch/s',
+            'classify_id'   => 'type/s'
+        ];
+        $param = $this->buildParam($param);
+
+        // 参数为空，展示组织架构
+        if(empty($param)) {
+            $branch = new Branch();
+            $list = collection($branch->where('pid','0')->select())->toArrya();
+        }
+
+
+    }
 }

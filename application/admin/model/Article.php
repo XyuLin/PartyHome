@@ -18,7 +18,8 @@ class Article extends Model
 
     // 追加属性
     protected $append = [
-        'classify_names'
+        'classify_names',
+        'branch_names'
     ];
 
     public function Classify()
@@ -26,12 +27,26 @@ class Article extends Model
         return $this->belongsTo('Classify');
     }
 
+    public function Branch()
+    {
+        return $this->belongsTo('Branch');
+    }
+
     public function getClassifyNamesAttr()
     {
         if($this->Classify != null) {
             return $this->Classify->names;
         } else {
-            return '此分类已删除';
+            return '无';
+        }
+    }
+
+    public function getBranchNamesAttr()
+    {
+        if($this->Branch != null) {
+            return $this->Branch->names;
+        } else {
+            return '无';
         }
     }
     

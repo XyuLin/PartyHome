@@ -3,7 +3,8 @@
 return [
     'Id'  =>  'ID',
     'Image'  =>  '图片',
-    'Classify_id'  =>  '分类id',
+    'Classify_id'  =>  '所属分类',
+    'Branch_id'  =>  '所属部门',
     'Title'  =>  '标题',
     'Author'  =>  '作者',
     'Content'  =>  '内容',
