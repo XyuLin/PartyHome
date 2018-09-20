@@ -343,7 +343,7 @@ class Api
         if (is_array($array)){
             foreach( $array as $item=>$value ){
                  $param = $this->request->param($value);
-                 if(!empty($param)){
+                 if($param != ''){
                      $data[$item] = $param;
                  }
 
