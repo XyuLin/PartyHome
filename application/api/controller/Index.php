@@ -103,7 +103,7 @@ class Index extends Api
             'classify_id'   => 'type/s'
         ];
         $param = $this->buildParam($param);
-        $page = $this->request->post('page/s');
+        $page = $this->request->post('p/s');
         // 参数为空，展示组织架构
         if(empty($param['classify_id'])) {
             $branch = new Branch();
