@@ -121,12 +121,16 @@ class Index extends Api
                 // 查看最下级部门的工作动态
                 $list = collection($article
                     ->where('classify_id','34')
+                    ->where('branch_id',$param['branch_id'])
                     ->limit('10')
                     ->order('createtime','desc')
                     ->page($page)
                     ->select()
                 )->toArray();
-                $total = $article->where('classify_id','34')->count('id');
+                $total = $article
+                    ->where('classify_id','34')
+                    ->where('branch_id',$param['branch_id'])
+                    ->count('id');
                 $data['list'] = $list;
                 $data['total'] = $total;
                 $data['names'] = '工作动态';
