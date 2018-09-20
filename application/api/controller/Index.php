@@ -80,7 +80,7 @@ class Index extends Api
         }
         $list = collection($article->where('classify_id','31')
                         ->where('id','not in',$inArr)
-                        ->limit('10')
+                          ->limit('10')
                         ->order('createtime','desc')
                         ->page($param['page'])
                         ->select()
@@ -103,11 +103,46 @@ class Index extends Api
             'classify_id'   => 'type/s'
         ];
         $param = $this->buildParam($param);
-
+        $page = $this->request->post('page/s');
         // 参数为空，展示组织架构
-        if(empty($param)) {
+        if(empty($param['classify_id'])) {
             $branch = new Branch();
-            $list = collection($branch->where('pid','0')->select())->toArrya();
+            $list = collection($branch
+                ->where('pid',$param['branch_id'])
+                ->limit('10')
+                ->order('id','desc')
+                ->page($page)
+                ->select()
+            )->toArray();
+            // 如果list为空，代表已经是最下级部门
+            if(empty($list)) {
+                $article = new Article();
+                // 查看最下级部门的工作动态
+                $list = collection($article
+                    ->where('classify_id','34')
+                    ->limit('10')
+                    ->order('createtime','desc')
+                    ->page($page)
+                    ->select()
+                )->toArray();
+                $data['list'] = $list;
+                $data['names'] = '工作动态';
+            } else {
+                $data['list'] = $list;
+            }
+
+            $this->success('请求成功',$data);
+        } else {
+            $article = new Article();
+            $list = collection($article
+                ->where($param)
+                ->limit('10')
+                ->page($page)
+                ->order('createtime','desc')
+                ->select()
+            )->toArray();
+            $data['list'] = $list;
+            $this->success('请求成功',$data);
         }
 
 
