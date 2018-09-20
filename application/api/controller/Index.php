@@ -114,6 +114,7 @@ class Index extends Api
                 ->page($page)
                 ->select()
             )->toArray();
+            $total = $branch->where('pid',$param['branch_id'])->count('id');
             // 如果list为空，代表已经是最下级部门
             if(empty($list)) {
                 $article = new Article();
@@ -125,10 +126,13 @@ class Index extends Api
                     ->page($page)
                     ->select()
                 )->toArray();
+                $total = $article->where('classify_id','34')->count('id');
                 $data['list'] = $list;
+                $data['total'] = $total;
                 $data['names'] = '工作动态';
             } else {
                 $data['list'] = $list;
+                $data['total'] = $total;
             }
 
             $this->success('请求成功',$data);
@@ -141,7 +145,9 @@ class Index extends Api
                 ->order('createtime','desc')
                 ->select()
             )->toArray();
+            $total = $article->where($param)->count('id');
             $data['list'] = $list;
+            $data['total'] = $total;
             $this->success('请求成功',$data);
         }
 
