@@ -125,9 +125,8 @@ class Index extends Api
                 Tree::instance()->init($list);
                 $tree = Tree::instance()->getTreeArray('61');
                 $data['list'] = $tree;
+                $this->success('请求成功',$data);
             }
-
-            $this->success('请求成功',$data);
         } else {
             $article = new Article();
             if(!isset($param['classify_id'])) {
@@ -143,6 +142,7 @@ class Index extends Api
             $total = $article->where($param)->count('id');
             $data['list'] = $list;
             $data['total'] = $total;
+            $data['names'] = '工作动态';
             $this->success('请求成功',$data);
         }
     }
