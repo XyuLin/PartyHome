@@ -23,4 +23,5 @@ return array (
   'configgroup' => 
   array (
     'basic' => 'Basic',
-  );
+  )
+);

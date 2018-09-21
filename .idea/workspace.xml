@@ -29,7 +29,7 @@
           <entry key="gitignore" value="61" />
           <entry key="html" value="359" />
           <entry key="js" value="395" />
-          <entry key="php" value="6751" />
+          <entry key="php" value="6752" />
           <entry key="txt" value="21" />
         </counts>
       </usages-collector>
@@ -37,7 +37,7 @@
         <counts>
           <entry key="HTML" value="359" />
           <entry key="JavaScript" value="395" />
-          <entry key="PHP" value="6751" />
+          <entry key="PHP" value="6752" />
           <entry key="PLAIN_TEXT" value="82" />
         </counts>
       </usages-collector>
@@ -87,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/extra/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="466">
+              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -286,12 +286,12 @@
       <workItem from="1537237950442" duration="1725000" />
       <workItem from="1537324398075" duration="20936000" />
       <workItem from="1537408426670" duration="19811000" />
-      <workItem from="1537494305837" duration="5671000" />
+      <workItem from="1537494305837" duration="5809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56563000" />
+    <option name="totallyTimeSpent" value="56701000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -653,8 +653,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/extra/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="466">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
         </state>
       </provider>
     </entry>
