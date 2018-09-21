@@ -113,15 +113,14 @@ class Index extends Api
         $param = $this->buildParam($param);
         $page = $this->request->post('p/s');
         // 参数为空，展示组织架构
-        if(empty($param['classify_id'])) {
+        if(!isset($param['branch_id'])) {
             $branch = new Branch();
             $list = collection($branch
-                // ->where('pid',$param['branch_id'])
                 ->select()
             )->toArray();
             // 如果list为空，代表已经是最下级部门
             if(empty($list)) {
-
+                $this->success('请求成功');
             } else {
                 Tree::instance()->init($list);
                 $tree = Tree::instance()->getTreeArray('61');
@@ -131,6 +130,9 @@ class Index extends Api
             $this->success('请求成功',$data);
         } else {
             $article = new Article();
+            if(!isset($param['classify_id'])) {
+                $param['classify_id'] = '34';
+            }
             $list = collection($article
                 ->where($param)
                 ->limit('10')
