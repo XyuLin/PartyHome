@@ -4,9 +4,6 @@
     <list default="true" id="9dc202ee-ef47-4cfc-8622-6b5acfaa9cb4" name="Default Changelist" comment="test PHPStorm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/api/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/branch.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/branch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/classify.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/classify.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +30,7 @@
           <entry key="gitignore" value="61" />
           <entry key="html" value="359" />
           <entry key="js" value="395" />
-          <entry key="php" value="6601" />
+          <entry key="php" value="6633" />
           <entry key="txt" value="21" />
         </counts>
       </usages-collector>
@@ -41,7 +38,7 @@
         <counts>
           <entry key="HTML" value="359" />
           <entry key="JavaScript" value="395" />
-          <entry key="PHP" value="6601" />
+          <entry key="PHP" value="6633" />
           <entry key="PLAIN_TEXT" value="82" />
         </counts>
       </usages-collector>
@@ -79,11 +76,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="170" column="42" lean-forward="true" selection-start-line="170" selection-start-column="42" selection-end-line="170" selection-end-column="42" />
+            <state relative-caret-position="398">
+              <caret line="188" column="37" lean-forward="true" selection-start-line="188" selection-start-column="37" selection-end-line="188" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -129,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assets/js/backend/classify.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+            <state relative-caret-position="162">
+              <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -206,9 +203,9 @@
         <option value="$PROJECT_DIR$/application/admin/controller/Ajax.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Article.php" />
         <option value="$PROJECT_DIR$/application/config.php" />
-        <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
         <option value="$PROJECT_DIR$/public/assets/js/backend/branch.js" />
         <option value="$PROJECT_DIR$/public/assets/js/backend/classify.js" />
+        <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
       </list>
     </option>
   </component>
@@ -425,12 +422,12 @@
       <workItem from="1537237950442" duration="1725000" />
       <workItem from="1537324398075" duration="20936000" />
       <workItem from="1537408426670" duration="19811000" />
-      <workItem from="1537494305837" duration="1883000" />
+      <workItem from="1537494305837" duration="2697000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52775000" />
+    <option name="totallyTimeSpent" value="53589000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -750,13 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="170" column="42" lean-forward="true" selection-start-line="170" selection-start-column="42" selection-end-line="170" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/auth/Rule.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -790,8 +780,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/js/backend/classify.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        <state relative-caret-position="162">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="188" column="37" lean-forward="true" selection-start-line="188" selection-start-column="37" selection-end-line="188" selection-end-column="37" />
         </state>
       </provider>
     </entry>

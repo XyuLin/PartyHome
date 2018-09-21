@@ -186,6 +186,6 @@ class Index extends Api
         $data['list'] = $list;
         $data['total'] = $total;
 
-        $this->success();
+        $this->success('请求成功',$data);
     }
 }
