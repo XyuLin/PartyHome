@@ -2,6 +2,7 @@
 
 namespace app\api\controller;
 
+use app\admin\model\Classify;
 use app\common\controller\Api;
 use app\common\model\Article;
 use app\common\model\Branch;
@@ -75,32 +76,31 @@ class Index extends Api
     public function special()
     {
         $param = [
-            'page' => 'p/s', // 分类id
+            'page' => 'p/s', // 页码
         ];
         $param = $this->buildParam($param);
-        $article = new Article();
 
-        // 查询排名最高的四篇文章
-        $hot = collection($article->where('classify_id','31')->order('weigh','desc')->limit('1','4')->select())->toArray();
+        $classsify = new Classify();
+        $hot = collection($classsify->where('pid','31')->order('weigh','desc')->limit('1','4')->select())->toArray();
         $inArr = [];
         foreach($hot as $value) {
             $inArr[] = $value['id'];
         }
-        $list = collection($article->where('classify_id','31')
-                        ->where('id','not in',$inArr)
-                          ->limit('10')
-                        ->order('createtime','desc')
-                        ->page($param['page'])
-                        ->select()
+
+        $list = collection($classsify
+            ->where('pid','31')
+            ->where('id','not in',$inArr)
+            ->order('createtime')
+            ->limit('10')
+            ->page($param['page'])
+            ->select()
         )->toArray();
-        $total = $article->where('classify_id','31')
-                        ->where('id','not in',$inArr)
-                        ->count('id');
+        $total = $classsify->where('pid','31')->where('id','not in',$inArr)->count('id');
+        $data['hot'] = $hot;
         $data['list'] = $list;
         $data['total'] = $total;
-        $data['hot'] = $hot;
-
         $this->success('请求成功',$data);
+
     }
 
     // 支部生活
@@ -116,35 +116,16 @@ class Index extends Api
         if(empty($param['classify_id'])) {
             $branch = new Branch();
             $list = collection($branch
-                ->where('pid',$param['branch_id'])
-                ->limit('10')
-                ->order('id','desc')
-                ->page($page)
+                // ->where('pid',$param['branch_id'])
                 ->select()
             )->toArray();
-            $total = $branch->where('pid',$param['branch_id'])->count('id');
             // 如果list为空，代表已经是最下级部门
             if(empty($list)) {
-                $article = new Article();
-                // 查看最下级部门的工作动态
-                $list = collection($article
-                    ->where('classify_id','34')
-                    ->where('branch_id',$param['branch_id'])
-                    ->limit('10')
-                    ->order('createtime','desc')
-                    ->page($page)
-                    ->select()
-                )->toArray();
-                $total = $article
-                    ->where('classify_id','34')
-                    ->where('branch_id',$param['branch_id'])
-                    ->count('id');
-                $data['list'] = $list;
-                $data['total'] = $total;
-                $data['names'] = '工作动态';
+
             } else {
-                $data['list'] = $list;
-                $data['total'] = $total;
+                Tree::instance()->init($list);
+                $tree = Tree::instance()->getTreeArray('61');
+                $data['list'] = $tree;
             }
 
             $this->success('请求成功',$data);
