@@ -20,7 +20,7 @@ class Index extends Api
 
     public function banner()
     {
-        $banner = new \app\admin\model\Branch();
+        $banner = new \app\admin\model\Banner();
         $list = collection($banner->limit('0','10')->select())->toArray();
         $data['list'] = $list;
         $this->success('请求成功',$data);
