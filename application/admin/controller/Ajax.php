@@ -105,6 +105,8 @@ class Ajax extends Backend
                 $imagewidth = isset($imgInfo[0]) ? $imgInfo[0] : $imagewidth;
                 $imageheight = isset($imgInfo[1]) ? $imgInfo[1] : $imageheight;
             }
+            $pathUrl = $this->request->root(true);
+            $path = str_replace('/index.php','',$pathUrl);
             $params = array(
                 'admin_id'    => (int)$this->auth->id,
                 'user_id'     => 0,
@@ -114,13 +116,12 @@ class Ajax extends Backend
                 'imagetype'   => $suffix,
                 'imageframes' => 0,
                 'mimetype'    => $fileInfo['type'],
-                'url'         => $uploadDir . $splInfo->getSaveName(),
+                'url'         => $path . $uploadDir . $splInfo->getSaveName(),
                 'uploadtime'  => time(),
                 'storage'     => 'local',
                 'sha1'        => $sha1,
             );
-            $pathUrl = $this->request->root(true);
-            $path = str_replace('/index.php','',$pathUrl);
+
             $attachment = model("attachment");
             $attachment->data(array_filter($params));
             $attachment->save();
