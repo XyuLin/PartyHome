@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dc202ee-ef47-4cfc-8622-6b5acfaa9cb4" name="Default Changelist" comment="test PHPStorm">
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Ajax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/general/Attachment.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/general/Attachment.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +29,7 @@
           <entry key="gitignore" value="61" />
           <entry key="html" value="359" />
           <entry key="js" value="395" />
-          <entry key="php" value="6638" />
+          <entry key="php" value="6650" />
           <entry key="txt" value="21" />
         </counts>
       </usages-collector>
@@ -37,7 +37,7 @@
         <counts>
           <entry key="HTML" value="359" />
           <entry key="JavaScript" value="395" />
-          <entry key="PHP" value="6638" />
+          <entry key="PHP" value="6650" />
           <entry key="PLAIN_TEXT" value="82" />
         </counts>
       </usages-collector>
@@ -47,7 +47,7 @@
         <counts>
           <entry key="HTML" value="33" />
           <entry key="JavaScript" value="23" />
-          <entry key="PHP" value="87" />
+          <entry key="PHP" value="88" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -65,7 +65,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="33" />
           <entry key="js" value="23" />
-          <entry key="php" value="87" />
+          <entry key="php" value="88" />
         </counts>
       </usages-collector>
     </session>
@@ -84,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Ajax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="118" column="78" lean-forward="true" selection-start-line="118" selection-start-column="78" selection-end-line="118" selection-end-column="78" />
+            <state relative-caret-position="281">
+              <caret line="121" column="39" lean-forward="true" selection-start-line="121" selection-start-column="39" selection-end-line="121" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -98,6 +98,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="486">
               <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/admin/controller/general/Attachment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -214,6 +223,7 @@
         <option value="$PROJECT_DIR$/public/assets/js/backend/classify.js" />
         <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Ajax.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/general/Attachment.php" />
       </list>
     </option>
   </component>
@@ -318,7 +328,7 @@
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="general" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
@@ -406,12 +416,12 @@
       <workItem from="1537237950442" duration="1725000" />
       <workItem from="1537324398075" duration="20936000" />
       <workItem from="1537408426670" duration="19811000" />
-      <workItem from="1537494305837" duration="3378000" />
+      <workItem from="1537494305837" duration="4027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54270000" />
+    <option name="totallyTimeSpent" value="54919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -661,13 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/general/Attachment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/js/backend/article.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1134">
@@ -771,8 +774,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="118" column="78" lean-forward="true" selection-start-line="118" selection-start-column="78" selection-end-line="118" selection-end-column="78" />
+        <state relative-caret-position="281">
+          <caret line="121" column="39" lean-forward="true" selection-start-line="121" selection-start-column="39" selection-end-line="121" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/general/Attachment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
         </state>
       </provider>
     </entry>
