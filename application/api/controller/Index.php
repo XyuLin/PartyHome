@@ -17,6 +17,14 @@ class Index extends Api
     protected $noNeedLogin = ['*'];
     protected $noNeedRight = ['*'];
 
+
+    public function banner()
+    {
+        $banner = new \app\admin\model\Branch();
+        $list = collection($banner->limit('0','10')->select())->toArray();
+        $data['list'] = $list;
+        $this->success('请求成功',$data);
+    }
     /**
      * 最新动态
      */
@@ -154,7 +162,30 @@ class Index extends Api
             $data['total'] = $total;
             $this->success('请求成功',$data);
         }
+    }
 
+    // 组织架构
+    public function groups()
+    {
+        $param = [
+            'branch_id'     => 'branch/s',
+        ];
+        $param = $this->buildParam($param);
+        $page = $this->request->post('p/s');
 
+        $branch = new Branch();
+        $list = collection($branch->where('pid',$param['branch_id'])->select())->toArray();
+        $total = $branch->where('pid',$param['branch_id'])->count('id');
+
+        if(empty($list)){
+            $article = new Article();
+            $list = collection($article->where('branch_id',$param['branch_id'])->select())->toArray();
+            $total = $article->where('branch_id',$param['branch_id'])->count('id');
+        }
+
+        $data['list'] = $list;
+        $data['total'] = $total;
+
+        $this->success();
     }
 }
