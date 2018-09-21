@@ -39,7 +39,7 @@ class Index extends Api
 
         try{
             if(empty($param['classify_id'])) throw new Exception('pid 参数不可为空！');
-            $list = $article->field('id,title,createtime')
+            $list = $article->field('id,title,image,createtime')
                 ->where('classify_id',$param['classify_id'])
                 ->order('createtime','desc')
                 ->limit('10')
