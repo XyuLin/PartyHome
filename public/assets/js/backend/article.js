@@ -40,7 +40,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'branch_names', title: __('Branch_id'),operate:false},
                         {field: 'title', title: __('Title')},
                         {field: 'author', title: __('Author')},
-                        {field: 'share_url', title: __('Share_url'),operate:false},
+                        {field: 'share_url', title: __('Share_url'),operate:false, formatter: Table.api.formatter.url},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'updatetime', title: __('Updatetime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'weigh', title: __('Weigh')},
