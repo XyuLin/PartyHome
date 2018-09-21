@@ -174,12 +174,24 @@ class Index extends Api
         $page = $this->request->post('p/s');
 
         $branch = new Branch();
-        $list = collection($branch->where('pid',$param['branch_id'])->select())->toArray();
+        $list = collection($branch
+            ->where('pid',$param['branch_id'])
+            ->limit('10')
+            ->page($page)
+            ->order('createtime')
+            ->select()
+        )->toArray();
         $total = $branch->where('pid',$param['branch_id'])->count('id');
 
         if(empty($list)){
             $article = new Article();
-            $list = collection($article->where('branch_id',$param['branch_id'])->select())->toArray();
+            $list = collection($article
+                ->where('branch_id',$param['branch_id'])
+                ->limit('10')
+                ->page($page)
+                ->order('createtime')
+                ->select()
+            )->toArray();
             $total = $article->where('branch_id',$param['branch_id'])->count('id');
         }
 
