@@ -24,6 +24,14 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 Form.events.selectpage(form);
             });
 
+            //在普通搜索渲染后
+            table.on('post-common-search.bs.table', function (event, table) {
+                var form = $("form", table.$commonsearch);
+                $("input[name='branch_id']", form).addClass("selectpage").data("source", "branch/index").data("primaryKey", "id").data("field", "names").data("orderBy", "id desc");
+                Form.events.cxselect(form);
+                Form.events.selectpage(form);
+            });
+
             // 初始化表格
             table.bootstrapTable({
                 url: $.fn.bootstrapTable.defaults.extend.index_url,

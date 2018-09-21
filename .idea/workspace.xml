@@ -28,7 +28,7 @@
         <counts>
           <entry key="gitignore" value="61" />
           <entry key="html" value="364" />
-          <entry key="js" value="395" />
+          <entry key="js" value="412" />
           <entry key="php" value="6758" />
           <entry key="txt" value="21" />
         </counts>
@@ -36,7 +36,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="364" />
-          <entry key="JavaScript" value="395" />
+          <entry key="JavaScript" value="412" />
           <entry key="PHP" value="6758" />
           <entry key="PLAIN_TEXT" value="82" />
         </counts>
@@ -105,8 +105,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/assets/js/backend/article.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="42" column="117" selection-start-line="42" selection-start-column="117" selection-end-line="42" selection-end-column="117" />
+            <state relative-caret-position="490">
+              <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -335,12 +335,12 @@
       <workItem from="1537237950442" duration="1725000" />
       <workItem from="1537324398075" duration="20936000" />
       <workItem from="1537408426670" duration="19811000" />
-      <workItem from="1537494305837" duration="8313000" />
+      <workItem from="1537494305837" duration="8399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59205000" />
+    <option name="totallyTimeSpent" value="59291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -702,8 +702,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/js/backend/article.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="42" column="117" selection-start-line="42" selection-start-column="117" selection-end-line="42" selection-end-column="117" />
+        <state relative-caret-position="490">
+          <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
         </state>
       </provider>
     </entry>
