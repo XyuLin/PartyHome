@@ -42,7 +42,42 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 为表格绑定事件
             Table.api.bindevent(table);
         },
-        add: function () {
+        add: function (form) {
+            $("#fachoose-article", form).on('click', function () {
+                var that = this;
+                var multiple = $(this).data("multiple") ? $(this).data("multiple") : false;
+                var mimetype = $(this).data("mimetype") ? $(this).data("mimetype") : '';
+                parent.Fast.api.open("article/select?element_id=" + $(this).attr("id") + "&multiple=" + multiple + "&mimetype=" + mimetype, __('Choose'), {
+                    callback: function (data) {var button = $("#" + $(that).attr("id"));
+                        var maxcount = $(button).data("maxcount");
+                        var input_id = $(button).data("input-id") ? $(button).data("input-id") : "";
+                        maxcount = typeof maxcount !== "undefined" ? maxcount : 0;
+                        if (input_id && data.multiple) {
+                            var urlArr = [];
+                            var inputObj = $("#" + input_id);
+                            var value = $.trim(inputObj.val());
+                            if (value !== "") {
+                                urlArr.push(inputObj.val());
+                            }
+                            urlArr.push(data.url)
+                            var result = urlArr.join(",");
+                            if (maxcount > 0) {
+                                var nums = value === '' ? 0 : value.split(/\,/).length;
+                                var files = data.url !== "" ? data.url.split(/\,/) : [];
+                                var remains = maxcount - nums;
+                                if (files.length > remains) {
+                                    Toastr.error(__('You can choose up to %d file%s', remains));
+                                    return false;
+                                }
+                            }
+                            inputObj.val(result).trigger("change");
+                        } else {
+                            $("#" + input_id).val(data.url).trigger("change");
+                        }
+                    }
+                });
+                return false;
+            });
             Controller.api.bindevent();
         },
         edit: function () {

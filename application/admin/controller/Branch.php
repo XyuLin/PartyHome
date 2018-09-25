@@ -24,7 +24,15 @@ class Branch extends Backend
     {
         parent::_initialize();
         $this->model = new \app\admin\model\Branch;
-        $ruleList = collection($this->model->order('id', 'asc')->select())->toArray();
+        $type = $this->request->param('id/s');
+        // halt($type);
+        if($type == '26') {
+            $where['pid'] = '62';
+        }else{
+            $where['pid'] = '61';
+        }
+
+        $ruleList = collection($this->model->where($where)->order('id', 'asc')->select())->toArray();
         // dump($ruleList);
         foreach ($ruleList as $k => &$v)
         {
@@ -33,7 +41,7 @@ class Branch extends Backend
         }
         unset($v);
         Tree::instance()->init($ruleList);
-        $this->rulelist = Tree::instance()->getTreeList(Tree::instance()->getTreeArray(0), 'names');
+        $this->rulelist = Tree::instance()->getTreeList(Tree::instance()->getTreeArray($where['pid']), 'names');
 
         $ruledata = [0 => __('None')];
         foreach ($this->rulelist as $k => &$v)

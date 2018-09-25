@@ -186,6 +186,8 @@ define(['jquery', 'bootstrap', 'toastr', 'layer', 'lang'], function ($, undefine
                 //再执行关闭
                 parent.Layer.close(index);
                 //再调用回传函数
+                callback(data);
+                console.log(callback.toString());
                 if (typeof callback === 'function') {
                     callback.call(undefined, data);
                 }

@@ -69,4 +69,9 @@ class Article extends Backend
         return $this->view->fetch();
     }
 
+    public function select()
+    {
+        return $this->view->fetch();
+    }
+
 }
