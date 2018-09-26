@@ -136,6 +136,7 @@ class Index extends Api
                     ->select()
                 )->toArray();
                 $data['list'] = $list;
+                $data['names'] = '底层列表';
                 $this->success('请求成功',$data);
             } else {
                 $list = collection($article
