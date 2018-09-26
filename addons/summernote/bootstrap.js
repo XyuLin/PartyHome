@@ -60,17 +60,9 @@ require(['form', 'upload'], function (Form, Upload) {
                         var ui = $.summernote.ui;
                         var button = ui.button({
                             contents: '<i class="fa fa-video-camera"/>',
-                            tooltip: __('Choose'),
+                            tooltip: __('选择本地视频'),
                             click: function () {
-                                parent.Fast.api.open("general/attachment/select?element_id=&multiple=true&mimetype=*", __('Choose'), {
-                                    callback: function (data) {
-                                        var urlArr = data.url.split(/\,/);
-                                        $.each(urlArr, function () {
-                                            var url = Fast.api.cdnurl(this);
-                                            var node = $("<a href='" + url + "'>" + url + "</a>");
-                                            context.invoke('insertNode', node[0]);
-                                        });
-                                    }
+
                                 });
                                 return false;
                             }

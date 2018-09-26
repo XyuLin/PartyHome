@@ -135,23 +135,25 @@ class Index extends Api
                     ->where('pid',$param['branch_id'])
                     ->select()
                 )->toArray();
-                $data['list'] = $list;
-                $data['names'] = '底层列表';
-                $this->success('请求成功',$data);
-            } else {
-                $list = collection($article
-                    ->where($param)
-                    ->limit('10')
-                    ->page($page)
-                    ->order('createtime','desc')
-                    ->select()
-                )->toArray();
-                $total = $article->where($param)->count('id');
-                $data['list'] = $list;
-                $data['total'] = $total;
-                $data['names'] = '工作动态';
-                $this->success('请求成功',$data);
+                if(!empty($list)){
+                    $data['list'] = $list;
+                    $data['names'] = '底层列表';
+                    $this->success('请求成功',$data);
+                }
             }
+            $list = collection($article
+                ->where($param)
+                ->limit('10')
+                ->page($page)
+                ->order('createtime','desc')
+                ->select()
+            )->toArray();
+            $total = $article->where($param)->count('id');
+            $data['list'] = $list;
+            $data['total'] = $total;
+            $data['names'] = '工作动态';
+            $this->success('请求成功',$data);
+
         }
     }
 

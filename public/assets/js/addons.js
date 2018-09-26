@@ -57,6 +57,28 @@ require(['form', 'upload'], function (Form, Upload) {
                         return button.render();
                     };
 
+                    var localVideoButton = function (context) {
+                        var ui = $.summernote.ui;
+                        var button = ui.button({
+                            contents: '<i class="fa fa-video-camera"/>',
+                            tooltip: __('选择本地视频'),
+                            click: function () {
+                                parent.Fast.api.open("general/attachment/select?element_id=&multiple=true&mimetype=*", __('Choose'), {
+                                    callback: function (data) {
+                                        var urlArr = data.url.split(/\,/);
+                                        $.each(urlArr, function () {
+                                            var url = Fast.api.cdnurl(this);
+                                            var node = $("<a href='" + url + "'>" + url + "</a>");
+                                            context.invoke('insertNode', node[0]);
+                                        });
+                                    }
+                                });
+                                return false;
+                            }
+                        });
+                        return button.render();
+                    };
+
                     $(".summernote,.editor", form).summernote({
                         height: 250,
                         lang: 'zh-CN',
@@ -83,6 +105,7 @@ require(['form', 'upload'], function (Form, Upload) {
                         buttons: {
                             image: imageButton,
                             attachment: attachmentButton,
+                            localVideo: localVideoButton,
                         },
                         dialogsInBody: true,
                         callbacks: {
