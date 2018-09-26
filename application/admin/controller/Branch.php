@@ -39,7 +39,6 @@ class Branch extends Backend
         }
         $ruleList = collection($this->model->order('id', 'asc')->select())->toArray();
 
-        // dump($ruleList);
         foreach ($ruleList as $k => &$v)
         {
             $v['names'] = __($v['names']);
