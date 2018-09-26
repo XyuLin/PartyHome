@@ -26,16 +26,21 @@ class Branch extends Backend
         $this->model = new \app\admin\model\Branch;
         $type = $this->request->param('id/s');
         // halt($type);
-        $inArr = ['33','34','35','36'];
-        if($type == '26') {
-            $where['pid'] = '62';
-        }if (in_array($type,$inArr)){
-            $where['pid'] = '61';
+        $inArr = ['26','33','34','35','36'];
+        if(in_array($type,$inArr)) {
+            if($type == '26') {
+                $where['pid'] = '62';
+            } elseif (in_array($type,$inArr)){
+                $where['pid'] = '61';
+            }
+            $ruleList = collection($this->model->where($where)->order('id', 'asc')->select())->toArray();
         }else{
-            $where['pid'] = ['neq','-1'];
+            $where['pid'] = '0';
+            $ruleList = collection($this->model->order('id', 'asc')->select())->toArray();
         }
 
-        $ruleList = collection($this->model->where($where)->order('id', 'asc')->select())->toArray();
+
+
         // dump($ruleList);
         foreach ($ruleList as $k => &$v)
         {
