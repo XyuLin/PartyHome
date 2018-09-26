@@ -34,13 +34,10 @@ class Branch extends Backend
             } elseif (in_array($type,$inArr)){
                 $where['pid'] = '61';
             }
-            $ruleList = collection($this->model->where($where)->order('id', 'asc')->select())->toArray();
         }else{
             $where['pid'] = '0';
-            $ruleList = collection($this->model->order('id', 'asc')->select())->toArray();
         }
-
-
+        $ruleList = collection($this->model->order('id', 'asc')->select())->toArray();
 
         // dump($ruleList);
         foreach ($ruleList as $k => &$v)
