@@ -62,9 +62,7 @@ require(['form', 'upload'], function (Form, Upload) {
                             contents: '<i class="fa fa-video-camera"/>',
                             tooltip: __('选择本地视频'),
                             click: function () {
-
-                                });
-                                return false;
+                                context.invoke('editor.insertText', 'hello');
                             }
                         });
                         return button.render();
