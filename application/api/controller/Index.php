@@ -112,9 +112,10 @@ class Index extends Api
         ];
         $param = $this->buildParam($param);
         $page = $this->request->post('p/s');
+        $branch = new Branch();
         // 参数为空，展示组织架构
         if(!isset($param['branch_id'])) {
-            $branch = new Branch();
+
             $list = collection($branch
                 ->select()
             )->toArray();
@@ -130,20 +131,26 @@ class Index extends Api
         } else {
             $article = new Article();
             if(!isset($param['classify_id'])) {
-                $param['classify_id'] = '34';
+                $list = collection($branch
+                    ->where('pid',$param['branch_id'])
+                    ->select()
+                )->toArray();
+                $data['list'] = $list;
+                $this->success('请求成功',$data);
+            } else {
+                $list = collection($article
+                    ->where($param)
+                    ->limit('10')
+                    ->page($page)
+                    ->order('createtime','desc')
+                    ->select()
+                )->toArray();
+                $total = $article->where($param)->count('id');
+                $data['list'] = $list;
+                $data['total'] = $total;
+                $data['names'] = '工作动态';
+                $this->success('请求成功',$data);
             }
-            $list = collection($article
-                ->where($param)
-                ->limit('10')
-                ->page($page)
-                ->order('createtime','desc')
-                ->select()
-            )->toArray();
-            $total = $article->where($param)->count('id');
-            $data['list'] = $list;
-            $data['total'] = $total;
-            $data['names'] = '工作动态';
-            $this->success('请求成功',$data);
         }
     }
 
