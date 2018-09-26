@@ -82,9 +82,16 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 }else{
                     $('#branch').hide();
                 }
-
                 // console.log(hideId);
+            });
+            $('#plupload-video').on('click', function () {
+                $('#c-videos').click();
             })
+
+            $("#c-videos").change(function () {
+                var file = $("#c-videos").val();
+                $('#c-video').val(file);
+            });
             Controller.api.bindevent();
         },
         edit: function () {
@@ -99,9 +106,16 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 }else{
                     $('#branch').hide();
                 }
-
                 // console.log(hideId);
+            });
+            $('#plupload-video').on('click', function () {
+                $('#c-videos').click();
             })
+
+            $("#c-videos").change(function () {
+                var file = $("#c-videos").val();
+                $('#c-video').val(file);
+            });
             Controller.api.bindevent();
         },
         select: function () {
