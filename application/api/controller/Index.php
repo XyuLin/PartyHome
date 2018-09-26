@@ -137,7 +137,6 @@ class Index extends Api
                 )->toArray();
                 if(!empty($list)){
                     $data['list'] = $list;
-                    $data['names'] = '底层列表';
                     $this->success('请求成功',$data);
                 }
             }
