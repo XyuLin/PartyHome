@@ -28,6 +28,7 @@ class Branch extends Backend
         // halt($type);
         $inArr = ['26','33','34','35','36'];
         if(in_array($type,$inArr)) {
+            $where['pid'] = '0';
             if($type == '26') {
                 $where['pid'] = '62';
             } elseif (in_array($type,$inArr)){

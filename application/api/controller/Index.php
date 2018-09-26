@@ -133,10 +133,15 @@ class Index extends Api
             if(!isset($param['classify_id'])) {
                 $list = collection($branch
                     ->where('pid',$param['branch_id'])
+                    ->limit('10')
+                    ->page($page)
+                    ->order('createtime','desc')
                     ->select()
                 )->toArray();
+                $total = $branch->where('pid',$param['branch_id'])->count();
                 if(!empty($list)){
                     $data['list'] = $list;
+                    $data['total'] = $total;
                     $this->success('请求成功',$data);
                 }
             }
