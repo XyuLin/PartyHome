@@ -56,17 +56,6 @@ require(['form', 'upload'], function (Form, Upload) {
                         return button.render();
                     };
 
-                    var localVideoButton = function (context) {
-                        var ui = $.summernote.ui;
-                        var button = ui.button({
-                            contents: '<i class="fa fa-video-camera"/>',
-                            tooltip: __('选择本地视频'),
-                            click: function () {
-                                context.invoke('editor.insertText', 'hello');
-                            }
-                        });
-                        return button.render();
-                    };
 
                     $(".summernote,.editor", form).summernote({
                         height: 250,
@@ -92,9 +81,9 @@ require(['form', 'upload'], function (Form, Upload) {
                             ['view', ['fullscreen', 'codeview', 'help']],
                         ],
                         buttons: {
-                            image: imageButton,
-                            attachment: attachmentButton,
-                            localVideo: localVideoButton,
+                            // image: imageButton,
+                            // attachment: attachmentButton,
+                            // localVideo: localVideoButton,
                         },
                         dialogsInBody: true,
                         callbacks: {

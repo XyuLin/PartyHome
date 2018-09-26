@@ -59,24 +59,17 @@ require(['form', 'upload'], function (Form, Upload) {
 
                     var localVideoButton = function (context) {
                         var ui = $.summernote.ui;
+                        // create button
                         var button = ui.button({
-                            contents: '<i class="fa fa-video-camera"/>',
-                            tooltip: __('选择本地视频'),
+                            contents: '<i class="fa fa-file"/>',
+                            tooltip: 'hello',
                             click: function () {
-                                parent.Fast.api.open("general/attachment/select?element_id=&multiple=true&mimetype=*", __('Choose'), {
-                                    callback: function (data) {
-                                        var urlArr = data.url.split(/\,/);
-                                        $.each(urlArr, function () {
-                                            var url = Fast.api.cdnurl(this);
-                                            var node = $("<a href='" + url + "'>" + url + "</a>");
-                                            context.invoke('insertNode', node[0]);
-                                        });
-                                    }
-                                });
-                                return false;
+                                // invoke insertText method with 'hello' on editor module.
+                                context.invoke('editor.insertText', 'hello');
                             }
                         });
-                        return button.render();
+
+                        return button.render();   // return button as jquery object
                     };
 
                     $(".summernote,.editor", form).summernote({
@@ -99,12 +92,12 @@ require(['form', 'upload'], function (Form, Upload) {
                             ['para', ['ul', 'ol', 'paragraph', 'height']],
                             ['table', ['table', 'hr']],
                             ['insert', ['link', 'picture', 'video']],
-                            ['select', ['image', 'attachment']],
+                            ['select', ['image', 'attachment','localVideo']],
                             ['view', ['fullscreen', 'codeview', 'help']],
                         ],
                         buttons: {
-                            image: imageButton,
-                            attachment: attachmentButton,
+                            // image: imageButton,
+                            // attachment: attachmentButton,
                             localVideo: localVideoButton,
                         },
                         dialogsInBody: true,
