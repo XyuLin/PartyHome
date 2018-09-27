@@ -2,6 +2,8 @@
 
 namespace app\api\controller;
 
+use app\admin\model\Branch;
+use app\admin\model\Classify;
 use app\common\controller\Api;
 use app\common\model\User;
 
@@ -140,6 +142,29 @@ class Validate extends Api
         if (!\app\common\library\Ems::check($email, $captcha, $event))
         {
             $this->error(__('验证码不正确'));
+        }
+        $this->success();
+    }
+
+    public function check_classify_exist()
+    {
+        $name = $this->request->request();
+        $count = Classify::where('names', '=', $name['row']['names'])->count();
+        if ($count)
+        {
+            $this->error(__('分类名已存在！'));
+        }
+        $this->success();
+    }
+
+
+    public function check_branch_exist()
+    {
+        $name = $this->request->post();
+        $count = Branch::where('names', '=', $name['row']['names'])->count();
+        if ($count)
+        {
+            $this->error(__('部门名称已存在！'));
         }
         $this->success();
     }
