@@ -124,6 +124,10 @@ class Index extends Api
 
             // halt($list);
             $list[0]['childlist'] = collection($branch->where('pid','61')->where('id','neq','77')->select())->toArray();
+            foreach($list[0]['childlist'] as &$value) {
+                $value['childlist'] = [];
+            }
+            unset($value);
             $data['list'] = $list;
             $this->success('请求成功',$data);
         } else {
