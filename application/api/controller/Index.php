@@ -124,7 +124,8 @@ class Index extends Api
 
             // halt($list);
             $list[0]['childlist'] = collection($branch->where('pid','61')->where('id','neq','77')->select())->toArray();
-            $this->success('请求成功',$list);
+            $data['list'] = $list;
+            $this->success('请求成功',$data);
         } else {
             $article = new Article();
             if(!isset($param['classify_id'])) {
