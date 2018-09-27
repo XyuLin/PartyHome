@@ -118,17 +118,13 @@ class Index extends Api
         if(!isset($param['branch_id'])) {
 
             $list = collection($branch
+                ->where('id','77')
                 ->select()
             )->toArray();
-            // 如果list为空，代表已经是最下级部门
-            if(empty($list)) {
-                $this->success('请求成功');
-            } else {
-                Tree::instance()->init($list);
-                $tree = Tree::instance()->getTreeArray('61');
-                $data['list'] = $tree;
-                $this->success('请求成功',$data);
-            }
+
+            // halt($list);
+            $list['childlist'] = collection($branch->where('pid','61')->where('id','neq','77')->select())->toArray();
+            $this->success('请求成功',$list);
         } else {
             $article = new Article();
             if(!isset($param['classify_id'])) {
