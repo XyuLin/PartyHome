@@ -7,6 +7,7 @@ use app\common\controller\Api;
 use app\common\model\Article;
 use app\common\model\Branch;
 use fast\Tree;
+use think\Config;
 use think\Exception;
 
 /**

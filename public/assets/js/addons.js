@@ -57,20 +57,6 @@ require(['form', 'upload'], function (Form, Upload) {
                         return button.render();
                     };
 
-                    var localVideoButton = function (context) {
-                        var ui = $.summernote.ui;
-                        // create button
-                        var button = ui.button({
-                            contents: '<i class="fa fa-file"/>',
-                            tooltip: 'hello',
-                            click: function () {
-                                // invoke insertText method with 'hello' on editor module.
-                                context.invoke('editor.insertText', 'hello');
-                            }
-                        });
-
-                        return button.render();   // return button as jquery object
-                    };
 
                     $(".summernote,.editor", form).summernote({
                         height: 250,
@@ -92,13 +78,13 @@ require(['form', 'upload'], function (Form, Upload) {
                             ['para', ['ul', 'ol', 'paragraph', 'height']],
                             ['table', ['table', 'hr']],
                             ['insert', ['link', 'picture', 'video']],
-                            ['select', ['image', 'attachment','localVideo']],
+                            ['select', ['image', 'attachment']],
                             ['view', ['fullscreen', 'codeview', 'help']],
                         ],
                         buttons: {
                             // image: imageButton,
                             // attachment: attachmentButton,
-                            localVideo: localVideoButton,
+                            // localVideo: localVideoButton,
                         },
                         dialogsInBody: true,
                         callbacks: {
