@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dc202ee-ef47-4cfc-8622-6b5acfaa9cb4" name="Default Changelist" comment="test PHPStorm">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Branch.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Branch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Classify.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Classify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/branch/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/branch/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/classify/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/classify/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/api/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/controller/Validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Validate.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +30,7 @@
           <entry key="gitignore" value="61" />
           <entry key="html" value="1198" />
           <entry key="js" value="2154" />
-          <entry key="php" value="9420" />
+          <entry key="php" value="9423" />
           <entry key="txt" value="21" />
         </counts>
       </usages-collector>
@@ -45,7 +39,7 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="1198" />
           <entry key="JavaScript" value="2153" />
-          <entry key="PHP" value="9420" />
+          <entry key="PHP" value="9423" />
           <entry key="PLAIN_TEXT" value="82" />
         </counts>
       </usages-collector>
@@ -88,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="124" column="27" lean-forward="true" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="27" />
+            <state relative-caret-position="401">
+              <caret line="125" column="97" lean-forward="true" selection-start-line="125" selection-start-column="97" selection-end-line="125" selection-end-column="97" />
             </state>
           </provider>
         </entry>
@@ -396,12 +390,12 @@
       <workItem from="1537839103182" duration="1551000" />
       <workItem from="1537843207375" duration="17230000" />
       <workItem from="1537928574242" duration="19419000" />
-      <workItem from="1538025633127" duration="6017000" />
+      <workItem from="1538025633127" duration="6118000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115727000" />
+    <option name="totallyTimeSpent" value="115828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -788,8 +782,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="124" column="27" lean-forward="true" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="27" />
+        <state relative-caret-position="401">
+          <caret line="125" column="97" lean-forward="true" selection-start-line="125" selection-start-column="97" selection-end-line="125" selection-end-column="97" />
         </state>
       </provider>
     </entry>

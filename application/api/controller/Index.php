@@ -123,7 +123,7 @@ class Index extends Api
             )->toArray();
 
             // halt($list);
-            $list['childlist'] = collection($branch->where('pid','61')->where('id','neq','77')->select())->toArray();
+            $list[0]['childlist'] = collection($branch->where('pid','61')->where('id','neq','77')->select())->toArray();
             $this->success('请求成功',$list);
         } else {
             $article = new Article();
