@@ -38,6 +38,9 @@ class Article extends Backend
     {
         if ($this->request->isPost()) {
             $params = $this->request->post("row/a");
+            if($params['image'] == '') {
+                $params['image'] = '';
+            }
             if ($params) {
                 if ($this->dataLimit && $this->dataLimitFieldAutoFill) {
                     $params[$this->dataLimitField] = $this->auth->id;
@@ -49,6 +52,7 @@ class Article extends Backend
                         $validate = is_bool($this->modelValidate) ? ($this->modelSceneValidate ? $name . '.add' : true) : $this->modelValidate;
                         $this->model->validate($validate);
                     }
+
                     $result = $this->model->allowField(true)->create($params);
                     if ($result !== false) {
                         $save['share_url'] = Config::get('share_url') . $result->id;
