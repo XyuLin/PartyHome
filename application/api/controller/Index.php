@@ -23,7 +23,9 @@ class Index extends Api
     public function banner()
     {
         $banner = new \app\admin\model\Banner();
-        $list = collection($banner->limit('0','10')->select())->toArray();
+        $list = collection($banner
+            ->where('weigh','desc')
+            ->limit('0','10')->select())->toArray();
         $data['list'] = $list;
         $this->success('请求成功',$data);
     }
