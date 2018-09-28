@@ -24,7 +24,7 @@ class Index extends Api
     {
         $banner = new \app\admin\model\Banner();
         $list = collection($banner
-            ->where('weigh','desc')
+            ->order('weigh','desc')
             ->limit('0','10')->select())->toArray();
         $data['list'] = $list;
         $this->success('请求成功',$data);
