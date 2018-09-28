@@ -18,6 +18,7 @@ class Classify extends Backend
      */
     protected $model = null;
     protected $searchFields = "id,names";
+    public $rulelist = '';
 
     public function _initialize()
     {
@@ -55,11 +56,18 @@ class Classify extends Backend
     {
         if ($this->request->isAjax())
         {
-            $list = $this->rulelist;
-            $total = count($this->rulelist);
+            if($keyId = $this->request->request("keyValue")) {
+                $info = $this->model->where('id',$keyId)->find();
+                $result = ['total'=>1, 'list'=>[
+                    ['id'=>$info['id'], 'names'=>$info['names']]
+                ]
+                ];
+            } else {
+                $list = $this->rulelist;
+                $total = count($this->rulelist);
 
-            $result = array("total" => $total, "rows" => $list);
-
+                $result = array("total" => $total, "rows" => $list);
+            }
             return json($result);
         }
         return $this->view->fetch();
@@ -110,5 +118,6 @@ class Classify extends Backend
         $this->view->assign("row", $row);
         return $this->view->fetch();
     }
+
 
 }

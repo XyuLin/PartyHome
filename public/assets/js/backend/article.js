@@ -62,15 +62,6 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             Table.api.bindevent(table);
         },
         add: function () {
-            // $('input[name="row[classify_id]"]').on('click', function () {
-            //     let inArr = ['22','24','23'];
-            //     $('.sp_results li').each(function (index,li) {
-            //         console.log($(li).attr('pkey'));
-            //         if($(li).attr('pkey').indexOf(inArr) != -1 ) {
-            //             $(this).addClass('disabled');
-            //         }
-            //     })
-            // });
             $('input[name="row[classify_id]"]').on('change', function () {
                 let hideId = document.querySelector('#c-classify_id').value;
                 let arr = ['26','33','34','35','36'];
@@ -97,6 +88,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         edit: function () {
             $('input[name="row[classify_id]"]').on('change', function () {
                 let hideId = document.querySelector('#c-classify_id').value;
+                // console.log(hideId);
                 var arr = ['26','33','34','35','36'];
                 if($.inArray(hideId,arr) != -1) {
                     $('#c-branch_id_text').val('');
@@ -107,14 +99,6 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     $('#branch').hide();
                 }
                 // console.log(hideId);
-            });
-            $('#plupload-video').on('click', function () {
-                $('#c-videos').click();
-            })
-
-            $("#c-videos").change(function () {
-                var file = $("#c-videos").val();
-                $('#c-video').val(file);
             });
             Controller.api.bindevent();
         },

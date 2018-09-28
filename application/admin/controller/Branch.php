@@ -68,10 +68,19 @@ class Branch extends Backend
     {
         if ($this->request->isAjax())
         {
-            $list = $this->rulelist;
-            $total = count($this->rulelist);
+            if($keyId = $this->request->request("keyValue")) {
+                $info = $this->model->where('id',$keyId)->find();
+                $result = ['total'=>1, 'list'=>[
+                    ['id'=>$info['id'], 'names'=>$info['names']]
+                ]
+                ];
+            } else {
+                $list = $this->rulelist;
+                $total = count($this->rulelist);
 
-            $result = array("total" => $total, "rows" => $list);
+                $result = array("total" => $total, "rows" => $list);
+            }
+
 
             return json($result);
         }
