@@ -147,12 +147,11 @@ class Index extends Api
                     $data['list'] = $list;
                     $data['total'] = $total;
                     $this->success('请求成功',$data);
-                } else {
-                    $data['list'] = [];
-                    $data['total'] = 0;
-                    $this->success('请求成功',$data);
                 }
-            } else {
+            }
+            if(isset($list) && empty($list)) {
+                $param['classify_id'] = '34';
+            }
                 $list = collection($article
                     ->where($param)
                     ->limit('10')
@@ -165,7 +164,6 @@ class Index extends Api
                 $data['total'] = $total;
                 $data['names'] = '工作动态';
                 $this->success('请求成功',$data);
-            }
 
         }
     }
