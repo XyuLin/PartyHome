@@ -39,7 +39,7 @@ class Article extends Backend
         if ($this->request->isPost()) {
             $params = $this->request->post("row/a");
             if($params['image'] == '') {
-                $params['image'] = '';
+                $params['image'] = 'http://49.4.70.109/partyHome/php/PartyHome/public/uploads/20180921/ac10ff539c432ae5b67e531787823ea2.jpg';
             }
             if ($params) {
                 if ($this->dataLimit && $this->dataLimitFieldAutoFill) {
