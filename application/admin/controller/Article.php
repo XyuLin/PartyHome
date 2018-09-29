@@ -18,6 +18,7 @@ class Article extends Backend
      * @var \app\admin\model\Article
      */
     protected $model = null;
+    protected $searchFields = "id,title";
 
     public function _initialize()
     {
