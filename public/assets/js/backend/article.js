@@ -129,6 +129,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'branch_id', title: __('Branch_id'),visible:false},
                         {field: 'branch_names', title: __('Branch_id'),operate:false},
                         {field: 'title', title: __('Title')},
+                        // {field: 'share_url', title: __('Share_url')},
                         {field: 'author', title: __('Author')},
                         {
                             field: 'operate', title: __('Operate'), events: {

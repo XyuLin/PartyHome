@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dc202ee-ef47-4cfc-8622-6b5acfaa9cb4" name="Default Changelist" comment="test PHPStorm">
-      <change beforePath="$PROJECT_DIR$/application/api/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/banner/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/banner/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/banner.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,19 +20,19 @@
     <session id="1390146589">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
-          <entry key="project.open.time.0" value="6" />
+          <entry key="project.closed" value="15" />
+          <entry key="project.open.time.0" value="7" />
           <entry key="project.open.time.4" value="6" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="61" />
-          <entry key="html" value="1245" />
-          <entry key="js" value="2194" />
+          <entry key="html" value="1248" />
+          <entry key="js" value="2213" />
           <entry key="php" value="9947" />
           <entry key="tpl" value="23" />
           <entry key="txt" value="21" />
@@ -38,8 +41,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="1245" />
-          <entry key="JavaScript" value="2193" />
+          <entry key="HTML" value="1248" />
+          <entry key="JavaScript" value="2212" />
           <entry key="PHP" value="9947" />
           <entry key="PLAIN_TEXT" value="82" />
           <entry key="Smarty" value="23" />
@@ -49,8 +52,8 @@
       <usages-collector id="statistics.php.composer.command.options" />
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="102" />
-          <entry key="JavaScript" value="52" />
+          <entry key="HTML" value="104" />
+          <entry key="JavaScript" value="54" />
           <entry key="PHP" value="163" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Smarty" value="2" />
@@ -69,8 +72,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="html" value="102" />
-          <entry key="js" value="52" />
+          <entry key="html" value="104" />
+          <entry key="js" value="54" />
           <entry key="php" value="163" />
           <entry key="tpl" value="2" />
           <entry key="ts" value="4" />
@@ -83,11 +86,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/banner/add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="152" column="45" lean-forward="true" selection-start-line="152" selection-start-column="45" selection-end-line="152" selection-end-column="45" />
+            <state relative-caret-position="351">
+              <caret line="40" column="66" lean-forward="true" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/banner/edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="42" column="69" lean-forward="true" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/js/backend/banner.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1006">
+              <caret line="93" column="44" lean-forward="true" selection-start-line="93" selection-start-column="44" selection-end-line="93" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/assets/js/backend/article.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="452">
+              <caret line="131" column="72" lean-forward="true" selection-start-line="131" selection-start-column="72" selection-end-line="131" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -147,7 +177,6 @@
         <option value="$PROJECT_DIR$/public/assets/js/backend/branch.js" />
         <option value="$PROJECT_DIR$/application/admin/controller/general/Attachment.php" />
         <option value="$PROJECT_DIR$/application/extra/site.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/banner/edit.html" />
         <option value="$PROJECT_DIR$/application/admin/model/Banner.php" />
         <option value="$PROJECT_DIR$/application/admin/view/common/header.html" />
         <option value="$PROJECT_DIR$/application/admin/view/common/menu.html" />
@@ -155,7 +184,6 @@
         <option value="$PROJECT_DIR$/application/admin/lang/zh-cn/classify.php" />
         <option value="$PROJECT_DIR$/extend/fast/Tree.php" />
         <option value="$PROJECT_DIR$/application/admin/view/layout/default.html" />
-        <option value="$PROJECT_DIR$/public/assets/js/backend/banner.js" />
         <option value="$PROJECT_DIR$/application/admin/view/article/select.html" />
         <option value="$PROJECT_DIR$/public/assets/js/backend/classify.js" />
         <option value="$PROJECT_DIR$/public/assets/js/fast.js" />
@@ -179,12 +207,14 @@
         <option value="$PROJECT_DIR$/application/admin/view/article/edit.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Classify.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Branch.php" />
-        <option value="$PROJECT_DIR$/public/assets/js/backend/article.js" />
         <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
         <option value="$PROJECT_DIR$/application/admin/view/index/login.html" />
         <option value="$PROJECT_DIR$/application/common/view/tpl/dispatch_jump.tpl" />
         <option value="$PROJECT_DIR$/application/admin/controller/Article.php" />
         <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/banner/edit.html" />
+        <option value="$PROJECT_DIR$/public/assets/js/backend/banner.js" />
+        <option value="$PROJECT_DIR$/public/assets/js/backend/article.js" />
       </list>
     </option>
   </component>
@@ -275,35 +305,48 @@
               <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
               <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
               <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
               <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="banner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -358,19 +401,20 @@
       <workItem from="1538116557049" duration="3456000" />
       <workItem from="1538120086917" duration="1072000" />
       <workItem from="1538185369528" duration="668000" />
-      <workItem from="1538187500953" duration="543000" />
+      <workItem from="1538187500953" duration="1154000" />
+      <workItem from="1538214202726" duration="308000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124890000" />
+    <option name="totallyTimeSpent" value="125809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23592493" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23927614" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -422,27 +466,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="test PHPStorm" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/banner.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/banner/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/branch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/common/controller/Api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -653,13 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/article.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="871">
-          <caret line="87" column="27" lean-forward="true" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Classify.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
@@ -738,8 +754,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="152" column="45" lean-forward="true" selection-start-line="152" selection-start-column="45" selection-end-line="152" selection-end-column="45" />
+        <state relative-caret-position="320">
+          <caret line="111" column="18" lean-forward="true" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/banner/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="40" column="66" lean-forward="true" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/banner/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="42" column="69" lean-forward="true" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/banner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1006">
+          <caret line="93" column="44" lean-forward="true" selection-start-line="93" selection-start-column="44" selection-end-line="93" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="131" column="72" lean-forward="true" selection-start-line="131" selection-start-column="72" selection-end-line="131" selection-end-column="72" />
         </state>
       </provider>
     </entry>
