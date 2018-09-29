@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9dc202ee-ef47-4cfc-8622-6b5acfaa9cb4" name="Default Changelist" comment="test PHPStorm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,12 +18,12 @@
     <session id="1390146589">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
-          <entry key="project.open.time.0" value="5" />
+          <entry key="project.closed" value="14" />
+          <entry key="project.open.time.0" value="6" />
           <entry key="project.open.time.4" value="6" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -31,7 +31,7 @@
           <entry key="gitignore" value="61" />
           <entry key="html" value="1245" />
           <entry key="js" value="2194" />
-          <entry key="php" value="9821" />
+          <entry key="php" value="9843" />
           <entry key="tpl" value="23" />
           <entry key="txt" value="21" />
         </counts>
@@ -41,7 +41,7 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="1245" />
           <entry key="JavaScript" value="2193" />
-          <entry key="PHP" value="9821" />
+          <entry key="PHP" value="9843" />
           <entry key="PLAIN_TEXT" value="82" />
           <entry key="Smarty" value="23" />
         </counts>
@@ -52,7 +52,7 @@
         <counts>
           <entry key="HTML" value="102" />
           <entry key="JavaScript" value="52" />
-          <entry key="PHP" value="162" />
+          <entry key="PHP" value="163" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Smarty" value="2" />
           <entry key="TypeScript" value="4" />
@@ -72,7 +72,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="102" />
           <entry key="js" value="52" />
-          <entry key="php" value="162" />
+          <entry key="php" value="163" />
           <entry key="tpl" value="2" />
           <entry key="ts" value="4" />
         </counts>
@@ -83,12 +83,12 @@
     <favorites_list name="PartyHome" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
+        <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="45" column="44" lean-forward="true" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+            <state relative-caret-position="455">
+              <caret line="152" column="49" lean-forward="true" selection-start-line="152" selection-start-column="49" selection-end-line="152" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -177,7 +177,6 @@
         <option value="$PROJECT_DIR$/application/api/controller/Validate.php" />
         <option value="$PROJECT_DIR$/application/admin/view/branch/edit.html" />
         <option value="$PROJECT_DIR$/application/admin/view/classify/edit.html" />
-        <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
         <option value="$PROJECT_DIR$/application/admin/view/article/edit.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Classify.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Branch.php" />
@@ -186,6 +185,7 @@
         <option value="$PROJECT_DIR$/application/admin/view/index/login.html" />
         <option value="$PROJECT_DIR$/application/common/view/tpl/dispatch_jump.tpl" />
         <option value="$PROJECT_DIR$/application/admin/controller/Article.php" />
+        <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
       </list>
     </option>
   </component>
@@ -248,7 +248,7 @@
       <path value="$PROJECT_DIR$/vendor/overtrue/wechat" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="470" />
     <option name="y" value="70" />
     <option name="width" value="865" />
@@ -259,6 +259,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,21 +276,14 @@
               <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
               <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
               <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
@@ -316,7 +310,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -365,19 +358,20 @@
       <workItem from="1538099951728" duration="1577000" />
       <workItem from="1538116557049" duration="3456000" />
       <workItem from="1538120086917" duration="1072000" />
-      <workItem from="1538185369528" duration="65000" />
+      <workItem from="1538185369528" duration="668000" />
+      <workItem from="1538187500953" duration="128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123744000" />
+    <option name="totallyTimeSpent" value="124475000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23257373" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23592493" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -639,13 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/article/edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -745,8 +732,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="45" column="44" lean-forward="true" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+        <state relative-caret-position="763">
+          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="152" column="49" lean-forward="true" selection-start-line="152" selection-start-column="49" selection-end-line="152" selection-end-column="49" />
         </state>
       </provider>
     </entry>

@@ -147,20 +147,25 @@ class Index extends Api
                     $data['list'] = $list;
                     $data['total'] = $total;
                     $this->success('请求成功',$data);
+                } else {
+                    $data['list'] = [];
+                    $data['total'] = 0;
+                    $this->success('请求成功',$data);
                 }
+            } else {
+                $list = collection($article
+                    ->where($param)
+                    ->limit('10')
+                    ->page($page)
+                    ->order('createtime','desc')
+                    ->select()
+                )->toArray();
+                $total = $article->where($param)->count('id');
+                $data['list'] = $list;
+                $data['total'] = $total;
+                $data['names'] = '工作动态';
+                $this->success('请求成功',$data);
             }
-            $list = collection($article
-                ->where($param)
-                ->limit('10')
-                ->page($page)
-                ->order('createtime','desc')
-                ->select()
-            )->toArray();
-            $total = $article->where($param)->count('id');
-            $data['list'] = $list;
-            $data['total'] = $total;
-            $data['names'] = '工作动态';
-            $this->success('请求成功',$data);
 
         }
     }
