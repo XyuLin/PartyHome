@@ -119,19 +119,36 @@ class Index extends Api
         // 参数为空，展示组织架构
         if(!isset($param['branch_id'])) {
 
-            $list = collection($branch
-                ->where('id','77')
-                ->select()
-            )->toArray();
+            if(!isset($param['classify_id'])) {
+                $list = collection($branch
+                    ->where('id','77')
+                    ->select()
+                )->toArray();
 
-            // halt($list);
-            $list[0]['childlist'] = collection($branch->where('pid','61')->where('id','neq','77')->select())->toArray();
-            foreach($list[0]['childlist'] as &$value) {
-                $value['childlist'] = [];
+                // halt($list);
+                $list[0]['childlist'] = collection($branch->where('pid','61')->where('id','neq','77')->select())->toArray();
+                foreach($list[0]['childlist'] as &$value) {
+                    $value['childlist'] = [];
+                }
+                unset($value);
+                $data['list'] = $list;
+                $this->success('请求成功',$data);
+            } else {
+                $branch_ids = Branch::where('pid','61')->column('id');
+                $list = collection($article
+                    ->where($param)
+                    ->where('branch_id','in',$branch_ids)
+                    ->limit('10')
+                    ->page($page)
+                    ->order('createtime','desc')
+                    ->select()
+                )->toArray();
+                $total = $article->where($param)->count('id');
+                $data['list'] = $list;
+                $data['total'] = $total;
+                $data['names'] = '工作动态';
+                $this->success('请求成功',$data);
             }
-            unset($value);
-            $data['list'] = $list;
-            $this->success('请求成功',$data);
         } else {
             $article = new Article();
             if(!isset($param['classify_id'])) {

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9dc202ee-ef47-4cfc-8622-6b5acfaa9cb4" name="Default Changelist" comment="test PHPStorm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/controller/Validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Validate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,12 +18,12 @@
     <session id="1390146589">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
-          <entry key="project.open.time.0" value="8" />
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.0" value="9" />
           <entry key="project.open.time.4" value="6" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -31,7 +31,7 @@
           <entry key="gitignore" value="61" />
           <entry key="html" value="1248" />
           <entry key="js" value="2213" />
-          <entry key="php" value="9958" />
+          <entry key="php" value="10090" />
           <entry key="tpl" value="23" />
           <entry key="txt" value="21" />
         </counts>
@@ -41,7 +41,7 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="1248" />
           <entry key="JavaScript" value="2212" />
-          <entry key="PHP" value="9958" />
+          <entry key="PHP" value="10090" />
           <entry key="PLAIN_TEXT" value="82" />
           <entry key="Smarty" value="23" />
         </counts>
@@ -52,7 +52,7 @@
         <counts>
           <entry key="HTML" value="106" />
           <entry key="JavaScript" value="55" />
-          <entry key="PHP" value="168" />
+          <entry key="PHP" value="169" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Smarty" value="2" />
           <entry key="TypeScript" value="4" />
@@ -72,7 +72,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="106" />
           <entry key="js" value="55" />
-          <entry key="php" value="168" />
+          <entry key="php" value="169" />
           <entry key="tpl" value="2" />
           <entry key="ts" value="4" />
         </counts>
@@ -83,21 +83,12 @@
     <favorites_list name="PartyHome" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/Branch.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1954">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="20" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/api/controller/Validate.php">
+        <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="163" column="11" selection-start-line="163" selection-start-column="11" selection-end-line="163" selection-end-column="11" />
+            <state relative-caret-position="401">
+              <caret line="141" column="33" lean-forward="true" selection-start-line="141" selection-start-column="33" selection-end-line="141" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -187,7 +178,6 @@
         <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
         <option value="$PROJECT_DIR$/application/admin/view/index/login.html" />
         <option value="$PROJECT_DIR$/application/common/view/tpl/dispatch_jump.tpl" />
-        <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
         <option value="$PROJECT_DIR$/public/assets/js/backend/article.js" />
         <option value="$PROJECT_DIR$/application/admin/model/Article.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Article.php" />
@@ -195,6 +185,7 @@
         <option value="$PROJECT_DIR$/application/admin/view/banner/edit.html" />
         <option value="$PROJECT_DIR$/public/assets/js/backend/banner.js" />
         <option value="$PROJECT_DIR$/application/api/controller/Validate.php" />
+        <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
       </list>
     </option>
   </component>
@@ -268,7 +259,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -324,6 +314,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,19 +366,20 @@
       <workItem from="1538185369528" duration="668000" />
       <workItem from="1538187500953" duration="1154000" />
       <workItem from="1538214202726" duration="1467000" />
-      <workItem from="1538272960555" duration="56000" />
+      <workItem from="1538272960555" duration="408000" />
+      <workItem from="1538289856222" duration="589000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127024000" />
+    <option name="totallyTimeSpent" value="127965000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24262735" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24597855" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -697,13 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="111" column="18" lean-forward="true" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/js/backend/article.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
@@ -746,17 +731,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/controller/Validate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="163" column="23" selection-start-line="163" selection-start-column="23" selection-end-line="163" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Branch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1954">
+        <state relative-caret-position="27">
           <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="20" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/controller/Validate.php">
+    <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="163" column="11" selection-start-line="163" selection-start-column="11" selection-end-line="163" selection-end-column="11" />
+        <state relative-caret-position="401">
+          <caret line="141" column="33" lean-forward="true" selection-start-line="141" selection-start-column="33" selection-end-line="141" selection-end-column="33" />
         </state>
       </provider>
     </entry>
