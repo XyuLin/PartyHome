@@ -144,7 +144,7 @@ class Index extends Api
                     ->order('createtime','desc')
                     ->select()
                 )->toArray();
-                $total = $article->where($param)->count('id');
+                $total = $article->where($param)->where('branch_id','in',$branch_ids)->count('id');
                 $data['list'] = $list;
                 $data['total'] = $total;
                 $data['names'] = '工作动态';
