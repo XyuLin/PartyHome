@@ -136,7 +136,7 @@ class Index extends Api
                 $this->success('请求成功',$data);
             } else {
                 $branch_ids = $branch->where('pid','61')->column('id');
-                $pids = $branch->where('pid','in',$branch_ids)->column('id');s
+                $pids = $branch->where('pid','in',$branch_ids)->column('id');
                 $list = collection($article
                     ->where($param)
                     ->where('branch_id','in',$pids)
