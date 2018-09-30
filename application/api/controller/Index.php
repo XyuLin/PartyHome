@@ -136,15 +136,16 @@ class Index extends Api
                 $this->success('请求成功',$data);
             } else {
                 $branch_ids = $branch->where('pid','61')->column('id');
+                $pids = $branch->where('pid','in',$branch_ids)->column('id');s
                 $list = collection($article
                     ->where($param)
-                    ->where('branch_id','in',$branch_ids)
+                    ->where('branch_id','in',$pids)
                     ->limit('10')
                     ->page($page)
                     ->order('createtime','desc')
                     ->select()
                 )->toArray();
-                $total = $article->where($param)->where('branch_id','in',$branch_ids)->count('id');
+                $total = $article->where($param)->where('branch_id','in',$pids)->count('id');
                 $data['list'] = $list;
                 $data['total'] = $total;
                 $data['names'] = '工作动态';
