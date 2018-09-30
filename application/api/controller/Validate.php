@@ -161,7 +161,7 @@ class Validate extends Api
     public function check_branch_exist()
     {
         $name = $this->request->post();
-        halt($name);
+        // halt($name);
         $count = Branch::where('names', '=', $name['row']['names'])->count();
         if ($count)
         {
