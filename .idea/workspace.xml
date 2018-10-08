@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dc202ee-ef47-4cfc-8622-6b5acfaa9cb4" name="Default Changelist" comment="test PHPStorm">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/api/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,12 +18,12 @@
     <session id="1390146589">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
-          <entry key="project.open.time.0" value="9" />
-          <entry key="project.open.time.4" value="6" />
+          <entry key="project.closed" value="20" />
+          <entry key="project.open.time.0" value="10" />
+          <entry key="project.open.time.4" value="7" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -30,7 +31,7 @@
           <entry key="gitignore" value="61" />
           <entry key="html" value="1248" />
           <entry key="js" value="2213" />
-          <entry key="php" value="10143" />
+          <entry key="php" value="10173" />
           <entry key="tpl" value="23" />
           <entry key="txt" value="21" />
         </counts>
@@ -40,7 +41,7 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="1248" />
           <entry key="JavaScript" value="2212" />
-          <entry key="PHP" value="10143" />
+          <entry key="PHP" value="10173" />
           <entry key="PLAIN_TEXT" value="82" />
           <entry key="Smarty" value="23" />
         </counts>
@@ -51,7 +52,7 @@
         <counts>
           <entry key="HTML" value="106" />
           <entry key="JavaScript" value="55" />
-          <entry key="PHP" value="169" />
+          <entry key="PHP" value="171" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Smarty" value="2" />
           <entry key="TypeScript" value="4" />
@@ -71,7 +72,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="106" />
           <entry key="js" value="55" />
-          <entry key="php" value="169" />
+          <entry key="php" value="171" />
           <entry key="tpl" value="2" />
           <entry key="ts" value="4" />
         </counts>
@@ -82,12 +83,12 @@
     <favorites_list name="PartyHome" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="141" column="51" lean-forward="true" selection-start-line="141" selection-start-column="51" selection-end-line="141" selection-end-column="51" />
+            <state relative-caret-position="401">
+              <caret line="150" column="40" lean-forward="true" selection-start-line="150" selection-start-column="40" selection-end-line="150" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -123,9 +124,9 @@
       <find>upload</find>
       <find>file</find>
       <find>names</find>
-      <find>branch</find>
       <find>edit</find>
       <find>banner</find>
+      <find>branch</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -366,19 +367,21 @@
       <workItem from="1538187500953" duration="1154000" />
       <workItem from="1538214202726" duration="1467000" />
       <workItem from="1538272960555" duration="408000" />
-      <workItem from="1538289856222" duration="1055000" />
+      <workItem from="1538289856222" duration="1655000" />
+      <workItem from="1538962654886" duration="19000" />
+      <workItem from="1538970221625" duration="726000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128431000" />
+    <option name="totallyTimeSpent" value="129776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24597855" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25268096" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -430,13 +433,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="test PHPStorm" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/admin/view/user/rule/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extend/fast/Form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
@@ -744,10 +740,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="141" column="51" lean-forward="true" selection-start-line="141" selection-start-column="51" selection-end-line="141" selection-end-column="51" />
+        <state relative-caret-position="401">
+          <caret line="150" column="40" lean-forward="true" selection-start-line="150" selection-start-column="40" selection-end-line="150" selection-end-column="40" />
         </state>
       </provider>
     </entry>
