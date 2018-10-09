@@ -45,7 +45,7 @@ class Index extends Api
             if(empty($param['classify_id'])) throw new Exception('pid 参数不可为空！');
             $list = $article->field('id,title,image,share_url,createtime')
                 ->where('classify_id',$param['classify_id'])
-                ->order('createtime','desc')
+                ->order('weigh','desc')
                 ->limit('10')
                 ->page($param['page'])
                 ->select();
@@ -143,7 +143,7 @@ class Index extends Api
                     ->where('branch_id','in',$pids)
                     ->limit('10')
                     ->page($page)
-                    ->order('id','asc')
+                    ->order('weigh','desc')
                     ->select()
                 )->toArray();
                 $total = $article->where($param)->where('branch_id','in',$pids)->count('id');
@@ -176,7 +176,7 @@ class Index extends Api
                     ->where($param)
                     ->limit('10')
                     ->page($page)
-                    ->order('createtime','desc')
+                    ->order('weigh','desc')
                     ->select()
                 )->toArray();
                 $total = $article->where($param)->count('id');
@@ -213,7 +213,7 @@ class Index extends Api
                 ->where('branch_id',$param['branch_id'])
                 ->limit('10')
                 ->page($page)
-                ->order('createtime')
+                ->order('weigh','desc')
                 ->select()
             )->toArray();
             $total = $article->where('branch_id',$param['branch_id'])->count('id');
