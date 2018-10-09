@@ -159,7 +159,7 @@ class Index extends Api
                     ->where('pid',$param['branch_id'])
                     ->limit('10')
                     ->page($page)
-                    ->order('createtime','desc')
+                    ->order('id','asc')
                     ->select()
                 )->toArray();
                 $total = $branch->where('pid',$param['branch_id'])->count();

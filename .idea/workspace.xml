@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dc202ee-ef47-4cfc-8622-6b5acfaa9cb4" name="Default Changelist" comment="test PHPStorm">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/api/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +18,11 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="20" />
-          <entry key="project.open.time.0" value="10" />
+          <entry key="project.open.time.0" value="11" />
           <entry key="project.open.time.4" value="7" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="20" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -31,7 +30,7 @@
           <entry key="gitignore" value="61" />
           <entry key="html" value="1248" />
           <entry key="js" value="2213" />
-          <entry key="php" value="10173" />
+          <entry key="php" value="10178" />
           <entry key="tpl" value="23" />
           <entry key="txt" value="21" />
         </counts>
@@ -41,7 +40,7 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="1248" />
           <entry key="JavaScript" value="2212" />
-          <entry key="PHP" value="10173" />
+          <entry key="PHP" value="10178" />
           <entry key="PLAIN_TEXT" value="82" />
           <entry key="Smarty" value="23" />
         </counts>
@@ -52,7 +51,7 @@
         <counts>
           <entry key="HTML" value="106" />
           <entry key="JavaScript" value="55" />
-          <entry key="PHP" value="171" />
+          <entry key="PHP" value="172" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Smarty" value="2" />
           <entry key="TypeScript" value="4" />
@@ -72,7 +71,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="106" />
           <entry key="js" value="55" />
-          <entry key="php" value="171" />
+          <entry key="php" value="172" />
           <entry key="tpl" value="2" />
           <entry key="ts" value="4" />
         </counts>
@@ -83,12 +82,12 @@
     <favorites_list name="PartyHome" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="150" column="40" lean-forward="true" selection-start-line="150" selection-start-column="40" selection-end-line="150" selection-end-column="40" />
+            <state relative-caret-position="453">
+              <caret line="185" column="45" lean-forward="true" selection-start-line="185" selection-start-column="45" selection-end-line="185" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -248,7 +247,7 @@
       <path value="$PROJECT_DIR$/vendor/overtrue/wechat" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="470" />
     <option name="y" value="70" />
     <option name="width" value="865" />
@@ -275,13 +274,13 @@
               <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
               <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PartyHome" type="b2602c69:ProjectViewProjectNode" />
               <item name="PartyHome" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -370,18 +369,19 @@
       <workItem from="1538289856222" duration="1655000" />
       <workItem from="1538962654886" duration="19000" />
       <workItem from="1538970221625" duration="726000" />
+      <workItem from="1539049844627" duration="696000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129776000" />
+    <option name="totallyTimeSpent" value="130472000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25268096" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2553305" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -433,13 +433,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="test PHPStorm" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/extend/fast/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="459" column="52" selection-start-line="459" selection-start-column="52" selection-end-line="459" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/general/Attachment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -743,10 +736,17 @@
     <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/controller/Api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="73" column="29" lean-forward="true" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="150" column="40" lean-forward="true" selection-start-line="150" selection-start-column="40" selection-end-line="150" selection-end-column="40" />
+        <state relative-caret-position="453">
+          <caret line="185" column="45" lean-forward="true" selection-start-line="185" selection-start-column="45" selection-end-line="185" selection-end-column="45" />
         </state>
       </provider>
     </entry>
