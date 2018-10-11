@@ -115,6 +115,12 @@ class Index extends Api
         ];
         $param = $this->buildParam($param);
         $page = $this->request->post('p/s');
+        $limit = $this->request->param('limit/s');
+        if($limit == null) {
+            $limit = '10';
+        } else {
+            $limit = '9';
+        }
         $branch = new Branch();
         $article = new Article();
         // 参数为空，展示组织架构
@@ -141,7 +147,7 @@ class Index extends Api
                 $list = collection($article
                     ->where($param)
                     ->where('branch_id','in',$pids)
-                    ->limit('30')
+                    ->limit($limit)
                     ->page($page)
                     ->order('weigh','desc')
                     ->select()
@@ -174,7 +180,7 @@ class Index extends Api
             }
                 $list = collection($article
                     ->where($param)
-                    ->limit('30')
+                    ->limit($limit)
                     ->page($page)
                     ->order('weigh','desc')
                     ->select()
