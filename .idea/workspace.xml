@@ -18,13 +18,13 @@
     <session id="1390146589">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
-          <entry key="project.open.time.0" value="12" />
+          <entry key="project.closed" value="23" />
+          <entry key="project.open.time.0" value="13" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="7" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -32,7 +32,7 @@
           <entry key="gitignore" value="61" />
           <entry key="html" value="1257" />
           <entry key="js" value="2245" />
-          <entry key="php" value="10219" />
+          <entry key="php" value="10222" />
           <entry key="tpl" value="23" />
           <entry key="txt" value="21" />
         </counts>
@@ -42,7 +42,7 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="1257" />
           <entry key="JavaScript" value="2244" />
-          <entry key="PHP" value="10219" />
+          <entry key="PHP" value="10222" />
           <entry key="PLAIN_TEXT" value="82" />
           <entry key="Smarty" value="23" />
         </counts>
@@ -84,21 +84,12 @@
     <favorites_list name="PartyHome" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="142" column="51" lean-forward="true" selection-start-line="142" selection-start-column="51" selection-end-line="142" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/admin/view/article/add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="62" column="10" lean-forward="true" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
+            <state relative-caret-position="479">
+              <caret line="185" column="45" lean-forward="true" selection-start-line="185" selection-start-column="45" selection-end-line="185" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -261,7 +252,7 @@
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="585" />
     <option name="y" value="85" />
-    <option name="width" value="1084" />
+    <option name="width" value="1085" />
     <option name="height" value="1095" />
   </component>
   <component name="ProjectView">
@@ -269,7 +260,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -320,6 +310,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -378,19 +369,20 @@
       <workItem from="1539049844627" duration="696000" />
       <workItem from="1539052925016" duration="6017000" />
       <workItem from="1539071828307" duration="5000" />
-      <workItem from="1539073120221" duration="121000" />
+      <workItem from="1539073120221" duration="337000" />
+      <workItem from="1539222295661" duration="171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136615000" />
+    <option name="totallyTimeSpent" value="137002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18967828" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19235925" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -743,17 +735,17 @@
     <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
+    <entry file="file://$PROJECT_DIR$/application/admin/view/article/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="142" column="51" lean-forward="true" selection-start-line="142" selection-start-column="51" selection-end-line="142" selection-end-column="51" />
+        <state relative-caret-position="1126">
+          <caret line="62" column="10" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/article/add.html">
+    <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="62" column="10" lean-forward="true" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
+        <state relative-caret-position="479">
+          <caret line="185" column="45" lean-forward="true" selection-start-line="185" selection-start-column="45" selection-end-line="185" selection-end-column="45" />
         </state>
       </provider>
     </entry>

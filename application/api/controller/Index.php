@@ -141,7 +141,7 @@ class Index extends Api
                 $list = collection($article
                     ->where($param)
                     ->where('branch_id','in',$pids)
-                    ->limit('10')
+                    ->limit('30')
                     ->page($page)
                     ->order('weigh','desc')
                     ->select()
@@ -174,7 +174,7 @@ class Index extends Api
             }
                 $list = collection($article
                     ->where($param)
-                    ->limit('10')
+                    ->limit('30')
                     ->page($page)
                     ->order('weigh','desc')
                     ->select()
