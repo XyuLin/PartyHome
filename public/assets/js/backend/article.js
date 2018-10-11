@@ -88,7 +88,6 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         edit: function () {
             $('input[name="row[classify_id]"]').on('change', function () {
                 let hideId = document.querySelector('#c-classify_id').value;
-                // console.log(hideId);
                 var arr = ['26','33','34','35','36'];
                 if($.inArray(hideId,arr) != -1) {
                     $('#c-branch_id_text').val('');
@@ -99,6 +98,15 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     $('#branch').hide();
                 }
                 // console.log(hideId);
+            });
+            $(function () {
+                let hideId = document.querySelector('#c-classify_id').value;
+                let arr = ['26','33','34','35','36'];
+                if($.inArray(hideId,arr) != -1) {
+                    // console.log(hideId);
+                    // let obj = $()
+                    $('#c-branch_id').attr('data-source',"branch/index?id="+hideId);
+                }
             });
             Controller.api.bindevent();
         },
