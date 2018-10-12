@@ -145,6 +145,7 @@ class Index extends Api
                 $branch_ids = $branch->where('pid','61')->column('id');
                 $pids = $branch->where('pid','in',$branch_ids)->column('id');
                 $list = collection($article
+                    ->field('content',true)
                     ->where($param)
                     ->where('branch_id','in',$pids)
                     ->limit($limit)
@@ -179,6 +180,7 @@ class Index extends Api
                 $param['classify_id'] = '34';
             }
                 $list = collection($article
+                    ->field('content',true)
                     ->where($param)
                     ->limit($limit)
                     ->page($page)
@@ -216,6 +218,7 @@ class Index extends Api
         if(empty($list)){
             $article = new Article();
             $list = collection($article
+                ->field('content',true)
                 ->where('branch_id',$param['branch_id'])
                 ->limit('10')
                 ->page($page)
