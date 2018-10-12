@@ -43,8 +43,9 @@ class Index extends Api
 
         try{
             if(empty($param['classify_id'])) throw new Exception('pid 参数不可为空！');
-            $list = $article->field('id,title,image,share_url,createtime')
+            $list = $article->field('id,title,image,share_url,createtime,status')
                 ->where('classify_id',$param['classify_id'])
+                ->where('status','1')
                 ->order('weigh','desc')
                 ->limit('10')
                 ->page($param['page'])
@@ -147,13 +148,14 @@ class Index extends Api
                 $list = collection($article
                     ->field('content',true)
                     ->where($param)
+                    ->where('status','1')
                     ->where('branch_id','in',$pids)
                     ->limit($limit)
                     ->page($page)
                     ->order('weigh','desc')
                     ->select()
                 )->toArray();
-                $total = $article->where($param)->where('branch_id','in',$pids)->count('id');
+                $total = $article->where($param)->where('status','1')->where('branch_id','in',$pids)->count('id');
                 $data['list'] = $list;
                 $data['total'] = $total;
                 $data['names'] = '工作动态';
@@ -182,12 +184,13 @@ class Index extends Api
                 $list = collection($article
                     ->field('content',true)
                     ->where($param)
+                    ->where('status','1')
                     ->limit($limit)
                     ->page($page)
                     ->order('weigh','desc')
                     ->select()
                 )->toArray();
-                $total = $article->where($param)->count('id');
+                $total = $article->where($param)->where('status','1')->count('id');
                 $data['list'] = $list;
                 $data['total'] = $total;
                 $data['names'] = '工作动态';
@@ -220,12 +223,13 @@ class Index extends Api
             $list = collection($article
                 ->field('content',true)
                 ->where('branch_id',$param['branch_id'])
+                ->where('status','1')
                 ->limit('10')
                 ->page($page)
                 ->order('weigh','desc')
                 ->select()
             )->toArray();
-            $total = $article->where('branch_id',$param['branch_id'])->count('id');
+            $total = $article->where('branch_id',$param['branch_id'])->where('status','1')->count('id');
         }
 
         $data['list'] = $list;

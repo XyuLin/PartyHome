@@ -10,6 +10,7 @@ return [
     'Author'  =>  '作者',
     'Content'  =>  '内容',
     'Weigh'  =>  '权重',
+    'Status'  =>  '状态',
     'Createtime'  =>  '添加时间',
     'Updatetime'  =>  '修改时间'
 ];
