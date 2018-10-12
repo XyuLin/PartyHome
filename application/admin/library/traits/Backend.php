@@ -235,7 +235,13 @@ trait Backend
                     }
                     $count = 0;
                     $list = $this->model->where($this->model->getPk(), 'in', $ids)->select();
+
                     foreach ($list as $index => $item) {
+                        if($item->status == '1') {
+                            $values = ['status' => '0'];
+                        } else {
+                            $values = ['status'=>'1'];
+                        }
                         $count += $item->allowField(true)->isUpdate(true)->save($values);
                     }
                     if ($count) {
