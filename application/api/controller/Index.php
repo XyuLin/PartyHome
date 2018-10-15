@@ -15,10 +15,17 @@ use think\Exception;
  */
 class Index extends Api
 {
-
+    protected $url ;
+    protected $domain ;
     protected $noNeedLogin = ['*'];
     protected $noNeedRight = ['*'];
 
+    public function _initialize()
+    {
+        parent::_initialize();
+        $this->url = Config::get('current_url');
+        $this->domain = Config::get('domain_name');
+    }
 
     public function banner()
     {
@@ -26,7 +33,8 @@ class Index extends Api
         $list = collection($banner
             ->order('weigh','desc')
             ->limit('0','10')->select())->toArray();
-        $data['list'] = $list;
+
+        $data['list'] = $this->formatUrl($list);
         $this->success('请求成功',$data);
     }
     /**
@@ -51,7 +59,7 @@ class Index extends Api
                 ->page($param['page'])
                 ->select();
             $total = $article->where('classify_id',$param['classify_id'])->count('id');
-            $data['list'] = $list;
+            $data['list'] = $this->formatUrl($list);
             $data['total'] = $total;
         } catch (Exception $exception) {
             $this->error($exception->getMessage());
@@ -70,7 +78,8 @@ class Index extends Api
         $article = new Article();
         $info = $article->where('id',$param['id'])->find();
         if($info != null) {
-            $this->success('请求成功',$info);
+            $info = $this->formatUrl([$info]);
+            $this->success('请求成功',$info[0]);
         } else {
             $this->error('参数错误! ID无效');
         }
@@ -156,7 +165,7 @@ class Index extends Api
                     ->select()
                 )->toArray();
                 $total = $article->where($param)->where('status','1')->where('branch_id','in',$pids)->count('id');
-                $data['list'] = $list;
+                $data['list'] = $this->formatUrl($list);
                 $data['total'] = $total;
                 $data['names'] = '工作动态';
                 $this->success('请求成功',$data);
@@ -191,7 +200,7 @@ class Index extends Api
                     ->select()
                 )->toArray();
                 $total = $article->where($param)->where('status','1')->count('id');
-                $data['list'] = $list;
+                $data['list'] = $this->formatUrl($list);
                 $data['total'] = $total;
                 $data['names'] = '工作动态';
                 $this->success('请求成功',$data);
@@ -232,9 +241,23 @@ class Index extends Api
             $total = $article->where('branch_id',$param['branch_id'])->where('status','1')->count('id');
         }
 
-        $data['list'] = $list;
+        $data['list'] = $this->formatUrl($list);
         $data['total'] = $total;
 
         $this->success('请求成功',$data);
+    }
+
+    public function formatUrl($array)
+    {
+        foreach ($array  as &$value) {
+            if(isset($value['image']) && !empty($value['image'])){
+                $value['image'] = $this->domain . $this->url . $value['image'];
+            }
+            if(isset($value['url']) && !empty($value['url'])){
+                $value['url']   = $this->domain . $value['url'];
+            }
+        }
+        unset($value);
+        return $array;
     }
 }
