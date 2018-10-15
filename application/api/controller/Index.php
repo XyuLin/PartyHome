@@ -256,6 +256,9 @@ class Index extends Api
             if(isset($value['url']) && !empty($value['url'])){
                 $value['url']   = $this->domain . $value['url'];
             }
+            if(isset($value['content']) && !empty($value['content'])) {
+                $value['content'] = str_replace('img src="', 'img src="'.$this->domain, $value['content']);
+            }
         }
         unset($value);
         return $array;
